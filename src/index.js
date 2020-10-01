@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {App} from "./components/app/app";
 
-const rentCount = 312;
+const Settings = {
+  RENT_COUNT: 312
+};
 
 ReactDOM.render(
-    <App rentCount={rentCount}/>,
+    <App rentCount={Settings.RENT_COUNT}/>,
     document.getElementById(`root`)
 );
