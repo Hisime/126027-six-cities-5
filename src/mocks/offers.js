@@ -55,13 +55,22 @@ export default [
       Features.TOWELS,
       Features.CABEL_TV
     ],
-    reviews: {
-      avatar: `img/avatar-max.jpg`,
-      name: `Max`,
-      rate: 3,
-      date: `April 2019`,
-      text: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`
-    }
+    reviews: [
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Max`,
+        rate: 3,
+        date: `April 2019`,
+        text: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`
+      },
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Edvard`,
+        rate: 5,
+        date: `April 2019`,
+        text: `Perfect place`
+      }
+    ]
   },
   {
     id: 2,
@@ -111,13 +120,22 @@ export default [
       Features.KITCHEN,
       Features.FRIDGE
     ],
-    reviews: {
-      avatar: `img/avatar-max.jpg`,
-      name: `John`,
-      rate: 5,
-      date: `March 2019`,
-      text: `I like this room, Cheap and quet`
-    }
+    reviews: [
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Leo`,
+        rate: 3,
+        date: `April 2019`,
+        text: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`
+      },
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Edvard`,
+        rate: 5,
+        date: `April 2019`,
+        text: `Perfect place`
+      }
+    ]
   },
   {
     id: 3,
@@ -172,13 +190,22 @@ export default [
       Features.TOWELS,
       Features.CABEL_TV
     ],
-    reviews: {
-      avatar: `img/avatar-max.jpg`,
-      name: `Peter`,
-      rate: 4.7,
-      date: `March 2020`,
-      text: `Mark is a fab host! The house is perfect location for great local spots.`
-    }
+    reviews: [
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Peter`,
+        rate: 4.7,
+        date: `April 2019`,
+        text: `Mark is a fab host! The house is perfect location for great local spots`
+      },
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Edvard`,
+        rate: 5,
+        date: `April 2019`,
+        text: `Mark is a fab host! The house is perfect location for great local spots.`
+      }
+    ]
   },
   {
     id: 4,
@@ -232,12 +259,21 @@ export default [
       Features.DISHWASHER,
       Features.TOWELS,
     ],
-    reviews: {
-      avatar: `img/avatar-max.jpg`,
-      name: `Dan`,
-      rate: 4.9,
-      date: `January 2018`,
-      text: `Great clean place. Very quiet. And a lovely helpful host.`
-    }
+    reviews: [
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Dan`,
+        rate: 4.9,
+        date: `April 2018`,
+        text: `Great clean place. Very quiet. And a lovely helpful host.`
+      },
+      {
+        avatar: `img/avatar-max.jpg`,
+        name: `Edvard`,
+        rate: 5,
+        date: `April 2017`,
+        text: `Great clean place. Very quiet. And a lovely helpful host.`
+      }
+    ]
   }
 ];

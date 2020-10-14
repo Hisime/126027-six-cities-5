@@ -16,7 +16,7 @@ export const App = (props) => {
           <Login/>
         </Route>
         <Route path="/offer/:id" exact>
-          <Room/>
+          <Room offer={offers[0]}/>
         </Route>
         <Route path="/favorites" exact>
           <Favorites/>
