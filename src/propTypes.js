@@ -28,11 +28,11 @@ export const offerPropType = PropTypes.shape({
     about: PropTypes.string.isRequired
   }),
   features: PropTypes.arrayOf(PropTypes.string),
-  reviews: PropTypes.shape({
+  reviews: PropTypes.arrayOf(PropTypes.shape({
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     rate: PropTypes.number.isRequired,
     date: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired
-  })
+  }))
 });

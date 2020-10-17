@@ -1,6 +1,7 @@
 import React from "react";
 import {offerPropType} from "../../propTypes";
 import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 export const OfferCard = (props) => {
   const {offer, onMouseEnterHandler} = props;
@@ -24,9 +25,9 @@ export const OfferCard = (props) => {
         </div>
       )}
       <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
+        <Link to="/offer/1">
           <img className="place-card__image" src={picture.src} width="260" height="200" alt={picture.alt}/>
-        </a>
+        </Link>
       </div>
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
@@ -48,7 +49,7 @@ export const OfferCard = (props) => {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">{title}</a>
+          <Link to="/offer/1">{title}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
