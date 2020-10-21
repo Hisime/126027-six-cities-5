@@ -70,7 +70,8 @@ export default [
         date: `April 2019`,
         text: `Perfect place`
       }
-    ]
+    ],
+    coords: [52.3909553943508, 4.85309666406198]
   },
   {
     id: 2,
@@ -135,7 +136,8 @@ export default [
         date: `April 2019`,
         text: `Perfect place`
       }
-    ]
+    ],
+    coords: [52.369553943508, 4.85309666406198]
   },
   {
     id: 3,
@@ -205,7 +207,8 @@ export default [
         date: `April 2019`,
         text: `Mark is a fab host! The house is perfect location for great local spots.`
       }
-    ]
+    ],
+    coords: [52.3909553943508, 4.929309666406198]
   },
   {
     id: 4,
@@ -274,6 +277,7 @@ export default [
         date: `April 2017`,
         text: `Great clean place. Very quiet. And a lovely helpful host.`
       }
-    ]
+    ],
+    coords: [52.3809553943508, 4.939309666406198]
   }
 ];

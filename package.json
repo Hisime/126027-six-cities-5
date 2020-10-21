@@ -14,9 +14,13 @@
     "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.8.3",
     "babel-loader": "8.1.0",
+    "css-loader": "5.0.0",
     "eslint": "5.13.0",
     "eslint-config-htmlacademy": "0.5.2",
     "eslint-plugin-react": "7.18.3",
+    "file-loader": "6.1.1",
+    "leaflet": "1.7.1",
+    "style-loader": "2.0.0",
     "webpack": "4.41.6",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.10.3"
