@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
 
 export const OfferCard = (props) => {
-  const {offer, onMouseEnterHandler} = props;
+  const {offer, onMouseEnterHandler, classNames} = props;
   const {
     premium,
     pictures,
@@ -16,7 +16,7 @@ export const OfferCard = (props) => {
   } = offer;
   const [picture] = pictures;
   return (
-    <article className="cities__place-card place-card" onMouseEnter={() => {
+    <article className={`place-card ${classNames.placeCard}`} onMouseEnter={() => {
       onMouseEnterHandler(offer);
     }}>
       {premium && (
@@ -24,7 +24,7 @@ export const OfferCard = (props) => {
           <span>Premium</span>
         </div>
       )}
-      <div className="cities__image-wrapper place-card__image-wrapper">
+      <div className={`place-card__image-wrapper ${classNames.placeCardImageWrapper}`}>
         <Link to="/offer/1">
           <img className="place-card__image" src={picture.src} width="260" height="200" alt={picture.alt}/>
         </Link>
@@ -60,4 +60,8 @@ export const OfferCard = (props) => {
 OfferCard.propTypes = {
   offer: offerPropType,
   onMouseEnterHandler: PropTypes.func,
+  classNames: PropTypes.shape({
+    placeCard: PropTypes.string,
+    placeCardImageWrapper: PropTypes.string,
+  }).isRequired,
 };

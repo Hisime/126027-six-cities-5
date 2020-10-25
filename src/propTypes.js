@@ -1,6 +1,13 @@
 import PropTypes from "prop-types";
 import {OfferType} from "./consts";
 
+export const reviewPropType = PropTypes.shape({
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  rate: PropTypes.number.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+});
 
 export const offerPropType = PropTypes.shape({
   id: PropTypes.number.isRequired,
@@ -28,11 +35,5 @@ export const offerPropType = PropTypes.shape({
     about: PropTypes.string.isRequired
   }),
   features: PropTypes.arrayOf(PropTypes.string),
-  reviews: PropTypes.arrayOf(PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    rate: PropTypes.number.isRequired,
-    date: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
-  }))
-});
+  reviews: PropTypes.arrayOf(reviewPropType),
+}).isRequired;

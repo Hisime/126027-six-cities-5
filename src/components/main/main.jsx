@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import {OfferList} from '../offer-list/offer-list';
 import {Map} from '../map/map';
+import {offerListTypes} from '../../consts';
 
 export const Main = (props) => {
   const {rentCount} = props;
@@ -96,7 +97,7 @@ export const Main = (props) => {
                   <option className="places__option" value="top-rated">Top rated first</option>
                 </select> */}
               </form>
-              <OfferList offers={offers}></OfferList>
+              <OfferList offers={offers} type={offerListTypes.MAIN}></OfferList>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map">
