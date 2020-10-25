@@ -18,4 +18,8 @@ export const Features = {
   CABEL_TV: `Cabel TV`
 };
 
+export const offerListTypes = {
+  MAIN: `Main`,
+  ROOM: `Room`,
+};
 
