@@ -9,6 +9,7 @@ import {offerPropType} from "../../propTypes";
 
 export const App = (props) => {
   const {rentCount, offers} = props;
+  const otherPlaces = props.offers.slice(1, 4);
   return (
     <BrowserRouter>
       <Switch>
@@ -16,7 +17,7 @@ export const App = (props) => {
           <Login/>
         </Route>
         <Route path="/offer/:id" exact>
-          <Room offer={offers[0]}/>
+          <Room offer={offers[0]} otherPlaces={otherPlaces}/>
         </Route>
         <Route path="/favorites" exact>
           <Favorites/>

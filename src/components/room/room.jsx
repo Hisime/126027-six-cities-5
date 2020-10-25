@@ -1,11 +1,12 @@
+import {Map} from "../map/map";
 import React from "react";
 import {offerPropType} from "../../propTypes";
 import {ReviewForm} from "../review-form/review-form";
 import {ReviewsList} from "../reviews-list/reviews-list";
-
+import PropTypes from "prop-types";
 
 export const Room = (props) => {
-  const {offer} = props;
+  const {offer, otherPlaces} = props;
   const {pictures, features, host, reviews} = offer;
   return (
     <div className="page">
@@ -114,7 +115,9 @@ export const Room = (props) => {
               </section>
             </div>
           </div>
-          <section className="property__map map"></section>
+          <section className="property__map map">
+            <Map offers={otherPlaces}/>
+          </section>
         </section>
         <div className="container">
           <section className="near-places places">
@@ -224,5 +227,6 @@ export const Room = (props) => {
 };
 
 Room.propTypes = {
-  offer: offerPropType
+  offer: offerPropType,
+  otherPlaces: PropTypes.arrayOf(offerPropType).isRequired,
 };
