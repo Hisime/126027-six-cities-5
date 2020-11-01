@@ -22,6 +22,7 @@ export class Map extends PureComponent {
       zoomControl: false,
       marker: true,
     });
+    const layerGroup = leaflet.layerGroup().addTo(map);
     map.setView(city, zoom);
     leaflet
       .tileLayer(
@@ -33,7 +34,20 @@ export class Map extends PureComponent {
       .addTo(map);
 
     offers.forEach(function ({coords}) {
-      leaflet.marker(coords, {icon}).addTo(map);
+      leaflet.marker(coords, {icon}).addTo(layerGroup);
+    });
+    this.layerGroup = layerGroup;
+    this.map = map;
+    this.icon = icon;
+  }
+
+  componentDidUpdate() {
+    const {offers} = this.props;
+    const {icon, layerGroup} = this;
+
+    layerGroup.clearLayers();
+    offers.forEach(function ({coords}) {
+      leaflet.marker(coords, {icon}).addTo(layerGroup);
     });
   }
 
