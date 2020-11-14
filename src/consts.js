@@ -23,3 +23,9 @@ export const offerListTypes = {
   ROOM: `Room`,
 };
 
+export const sortTypes = {
+  POPULAR: `POPULAR`,
+  PRICE_ASC: `PRICE_ASC`,
+  PRICE_DES: `PRICE_DES`,
+  TOP_DES: `TOP_DES`,
+};
