@@ -11,6 +11,7 @@ const initialState = {
   defaultOffersSort: offers[0],
   currentSort: sortList[0],
   isSortOpen: false,
+  activeOffer: null,
 };
 
 const reducer = (state = initialState, action) => {
@@ -41,6 +42,16 @@ const reducer = (state = initialState, action) => {
         offers: sortedOffers,
         currentSort: sort,
       });
+    case ActionType.SET_ACTIVE_OFFER:
+      const offerCard = action.payload;
+      return extend(state, {
+        activeOffer: offerCard,
+      });
+    case ActionType.RESET_ACTIVE_OFFER:
+      return extend(state, {
+        activeOffer: null,
+      });
+
   }
   return state;
 };

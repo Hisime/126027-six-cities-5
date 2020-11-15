@@ -4,41 +4,47 @@ import {offerPropType} from "../../propTypes";
 import {offerListTypes} from '../../consts';
 import {OfferListMain} from '../offer-list-main/offer-list-main';
 import {OfferListRoom} from '../offer-list-room/offer-list-room';
+import {connect} from "react-redux";
+import {ActionCreator} from "../../store/action";
 
-export class OfferList extends React.PureComponent {
-  constructor(props) {
-    super(props);
+const OfferList = (props) => {
+  const {type, offers, setActiveOffer, resetActiveOffer} = props;
 
-    this.state = {
-      active: false
-    };
-
-    this.onMouseEnterHandler = this.onMouseEnterHandler.bind(this);
-  }
-  onMouseEnterHandler(activeCard) {
-    this.setState({active: activeCard});
-  }
-
-  getComponentByType(type) {
-    const {offers} = this.props;
+  const onMouseEnterHandler = (offer) => {
+    setActiveOffer(offer);
+  };
+  const onMouseLeaveHandler = () => {
+    resetActiveOffer();
+  };
+  const getComponentByType = () => {
     switch (type) {
       case offerListTypes.MAIN: {
-        return <OfferListMain offers={offers} onMouseEnterHandler={this.onMouseEnterHandler}/>;
+        return <OfferListMain offers={offers} onMouseLeaveHandler={onMouseLeaveHandler} onMouseEnterHandler={onMouseEnterHandler}/>;
       }
       case offerListTypes.ROOM: {
-        return <OfferListRoom offers={offers} onMouseEnterHandler={this.onMouseEnterHandler}/>;
+        return <OfferListRoom offers={offers} onMouseLeaveHandler={onMouseLeaveHandler }onMouseEnterHandler={onMouseEnterHandler}/>;
       }
     }
     return ``;
-  }
+  };
+  return getComponentByType(type);
+};
 
-  render() {
-    const {type} = this.props;
-    return this.getComponentByType(type);
+
+const mapDispatchToProps = (dispatch) => ({
+  setActiveOffer(offer) {
+    dispatch(ActionCreator.setActiveOffer(offer));
+  },
+  resetActiveOffer() {
+    dispatch(ActionCreator.resetActiveOffer());
   }
-}
+});
 
 OfferList.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
   type: PropTypes.oneOf([offerListTypes.MAIN, offerListTypes.ROOM]).isRequired,
+  setActiveOffer: PropTypes.func.isRequired,
 };
+
+export {OfferList};
+export default connect(``, mapDispatchToProps)(OfferList);

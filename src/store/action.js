@@ -3,6 +3,8 @@ export const ActionType = {
   GET_OFFERS: `GET_OFFERS`,
   TOGGLE_SORT: `TOGGLE_SORT`,
   SET_SORT: `SET_SORT`,
+  SET_ACTIVE_OFFER: `SET_ACTIVE_OFFER`,
+  RESET_ACTIVE_OFFER: `RESET_ACTIVE_OFFER`,
 };
 
 export const ActionCreator = {
@@ -20,5 +22,12 @@ export const ActionCreator = {
   setSort: (id) => ({
     type: ActionType.SET_SORT,
     payload: id,
+  }),
+  setActiveOffer: (offer) => ({
+    type: ActionType.SET_ACTIVE_OFFER,
+    payload: offer,
+  }),
+  resetActiveOffer: () => ({
+    type: ActionType.RESET_ACTIVE_OFFER,
   })
 };
