@@ -36,4 +36,4 @@ export const offerPropType = PropTypes.shape({
   }),
   features: PropTypes.arrayOf(PropTypes.string),
   reviews: PropTypes.arrayOf(reviewPropType),
-}).isRequired;
+});

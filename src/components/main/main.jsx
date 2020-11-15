@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import OfferList from '../offer-list/offer-list';
-import {Map} from '../map/map';
+import Map from '../map/map';
 import {offerListTypes} from '../../consts';
 import CitiesList from '../cities-list/cities-list';
 import {connect} from "react-redux";
