@@ -1,9 +1,9 @@
-import {Map} from "../map/map";
+import Map from "../map/map";
 import React from "react";
 import {offerPropType} from "../../propTypes";
 import {ReviewForm} from "../review-form/review-form";
 import {ReviewsList} from "../reviews-list/reviews-list";
-import {OfferList} from "../offer-list/offer-list";
+import OfferList from "../offer-list/offer-list";
 import PropTypes from "prop-types";
 import {offerListTypes} from '../../consts';
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
 
 export const OfferCard = (props) => {
-  const {offer, onMouseEnterHandler, classNames} = props;
+  const {offer, onMouseEnterHandler, onMouseLeaveHandler, classNames} = props;
   const {
     premium,
     pictures,
@@ -18,6 +18,8 @@ export const OfferCard = (props) => {
   return (
     <article className={`place-card ${classNames.placeCard}`} onMouseEnter={() => {
       onMouseEnterHandler(offer);
+    }} onMouseLeave={() => {
+      onMouseLeaveHandler();
     }}>
       {premium && (
         <div className="place-card__mark">
@@ -60,6 +62,7 @@ export const OfferCard = (props) => {
 OfferCard.propTypes = {
   offer: offerPropType,
   onMouseEnterHandler: PropTypes.func,
+  onMouseLeaveHandler: PropTypes.func,
   classNames: PropTypes.shape({
     placeCard: PropTypes.string,
     placeCardImageWrapper: PropTypes.string,

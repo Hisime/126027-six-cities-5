@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import "leaflet/dist/leaflet.css";
 import leaflet from "leaflet";
+import {connect} from "react-redux";
 
-export class Map extends PureComponent {
+class Map extends PureComponent {
   constructor(props) {
     super(props);
   }
@@ -13,7 +14,11 @@ export class Map extends PureComponent {
     const city = [52.38333, 4.9];
     const icon = leaflet.icon({
       iconUrl: `img/pin.svg`,
-      iconSize: [30, 30],
+      iconSize: [27, 39],
+    });
+    const activeIcon = leaflet.icon({
+      iconUrl: `img/pin-active.svg`,
+      iconSize: [27, 39],
     });
     const zoom = 12;
     const map = leaflet.map(`map`, {
@@ -39,23 +44,39 @@ export class Map extends PureComponent {
     this.layerGroup = layerGroup;
     this.map = map;
     this.icon = icon;
+    this.activeIcon = activeIcon;
+  }
+
+  isActive(offer, activeOffer) {
+    return offer === activeOffer;
   }
 
   componentDidUpdate() {
-    const {offers} = this.props;
-    const {icon, layerGroup} = this;
-
+    const {offers, activeOfferCard} = this.props;
+    const {icon, activeIcon, layerGroup} = this;
+    const isActive = this.isActive;
     layerGroup.clearLayers();
-    offers.forEach(function ({coords}) {
-      leaflet.marker(coords, {icon}).addTo(layerGroup);
+    offers.forEach(function (offer) {
+      const {coords} = offer;
+      const curIcon = isActive(offer, activeOfferCard) ? activeIcon : icon;
+      leaflet.marker(coords, {icon: curIcon}).addTo(layerGroup);
     });
   }
 
   render() {
-    return <div id="map" style={{height: `100%`}}></div>;
+    return <div id="map" style={{height: `100%`}}/>;
   }
 }
 
 Map.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
+  activeOfferCard: offerPropType,
 };
+
+const mapStateToProps = (state) => ({
+  activeOfferCard: state.activeOffer,
+});
+
+export {Map};
+
+export default connect(mapStateToProps)(Map);

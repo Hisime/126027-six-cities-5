@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 
 export const OfferListRoom = (props) => {
-  const {offers, onMouseEnterHandler} = props;
+  const {offers, onMouseEnterHandler, onMouseLeaveHandler} = props;
   const classNames = {
     placeCard: `near-places__card`,
     placeCardImageWrapper: `near-places__image-wrapper`,
@@ -16,6 +16,7 @@ export const OfferListRoom = (props) => {
           key={offer.id}
           offer={offer}
           onMouseEnterHandler={onMouseEnterHandler}
+          onMouseLeaveHandler={onMouseLeaveHandler}
           classNames={classNames}
         ></OfferCard>
       ))}
@@ -26,4 +27,5 @@ export const OfferListRoom = (props) => {
 OfferListRoom.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
   onMouseEnterHandler: PropTypes.func,
+  onMouseLeaveHandler: PropTypes.func,
 };
