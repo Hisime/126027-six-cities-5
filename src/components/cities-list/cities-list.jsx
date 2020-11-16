@@ -4,6 +4,7 @@ import {ActionCreator} from "../../store/action";
 import PropTypes from "prop-types";
 import cities from "../../mocks/cities";
 
+
 const CitiesList = (props) => {
   const {currentCity, setCity, getOffers} = props;
   const isActive = (city) => {
