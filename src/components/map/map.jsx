@@ -9,9 +9,16 @@ class Map extends PureComponent {
   constructor(props) {
     super(props);
   }
+
   componentDidMount() {
     const {offers} = this.props;
-    const city = [52.38333, 4.9];
+    const [firstOffer] = offers;
+    const cityLocation = firstOffer.city.location;
+    const center = [
+      cityLocation.latitude,
+      cityLocation.longitude,
+    ];
+    const {zoom} = cityLocation;
     const icon = leaflet.icon({
       iconUrl: `img/pin.svg`,
       iconSize: [27, 39],
@@ -20,15 +27,14 @@ class Map extends PureComponent {
       iconUrl: `img/pin-active.svg`,
       iconSize: [27, 39],
     });
-    const zoom = 12;
     const map = leaflet.map(`map`, {
-      center: city,
+      center,
       zoom,
       zoomControl: false,
       marker: true,
     });
     const layerGroup = leaflet.layerGroup().addTo(map);
-    map.setView(city, zoom);
+    map.setView(center, zoom);
     leaflet
       .tileLayer(
           `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png`,
@@ -38,8 +44,8 @@ class Map extends PureComponent {
       )
       .addTo(map);
 
-    offers.forEach(function ({coords}) {
-      leaflet.marker(coords, {icon}).addTo(layerGroup);
+    offers.forEach(({location}) => {
+      leaflet.marker([location.latitude, location.longitude], {icon}).addTo(layerGroup);
     });
     this.layerGroup = layerGroup;
     this.map = map;
@@ -52,14 +58,22 @@ class Map extends PureComponent {
   }
 
   componentDidUpdate() {
-    const {offers, activeOfferCard} = this.props;
+    const {offers, activeOfferId} = this.props;
     const {icon, activeIcon, layerGroup} = this;
+    const [firstOffer] = offers;
+    const cityLocation = firstOffer.city.location;
+    const center = [
+      cityLocation.latitude,
+      cityLocation.longitude,
+    ];
+    const {zoom} = cityLocation;
     const isActive = this.isActive;
     layerGroup.clearLayers();
-    offers.forEach(function (offer) {
-      const {coords} = offer;
-      const curIcon = isActive(offer, activeOfferCard) ? activeIcon : icon;
-      leaflet.marker(coords, {icon: curIcon}).addTo(layerGroup);
+    this.map.setView(center, zoom);
+    offers.forEach((offer) => {
+      const {location, id} = offer;
+      const curIcon = isActive(id, activeOfferId) ? activeIcon : icon;
+      leaflet.marker([location.latitude, location.longitude], {icon: curIcon}).addTo(layerGroup);
     });
   }
 
@@ -70,11 +84,11 @@ class Map extends PureComponent {
 
 Map.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
-  activeOfferCard: offerPropType,
+  activeOfferId: PropTypes.number.isRequired,
 };
 
-const mapStateToProps = (state) => ({
-  activeOfferCard: state.activeOffer,
+const mapStateToProps = ({ACTIVE_OFFER}) => ({
+  activeOfferId: ACTIVE_OFFER.activeOfferId,
 });
 
 export {Map};

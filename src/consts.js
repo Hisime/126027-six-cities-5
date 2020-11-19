@@ -5,6 +5,15 @@ export const OfferType = {
   HOTEL: `Hotel`
 };
 
+export const Cities = {
+  PARIS: `Paris`,
+  COLOGNE: `Cologne`,
+  BRUSSELS: `Brussels`,
+  AMSTERDAM: `Amsterdam`,
+  HAMBURG: `Hamburg`,
+  DUSSELDORF: `Dusseldorf`
+};
+
 export const Features = {
   WIFI: `Wi-Fi`,
   HEATING: `Heating`,
@@ -28,4 +37,22 @@ export const sortTypes = {
   PRICE_ASC: `PRICE_ASC`,
   PRICE_DES: `PRICE_DES`,
   TOP_DES: `TOP_DES`,
+};
+
+export const AuthorizationStatus = {
+  AUTH: `AUTH`,
+  NO_AUTH: `NO_AUTH`,
+};
+
+export const AppRoute = {
+  LOGIN: `/login`,
+  MAIN: `/main`,
+  FAVORITES: `/favorites`,
+  OFFER: `/offer`,
+};
+
+export const APIRoute = {
+  HOTELS: `/hotels`,
+  LOGIN: `/login`,
+  FAVORITE: `/favorite`,
 };

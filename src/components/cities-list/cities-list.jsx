@@ -1,31 +1,29 @@
 import React from "react";
 import {connect} from "react-redux";
-import {ActionCreator} from "../../store/action";
+import {filterActions, getOffers} from "../../store/action";
 import PropTypes from "prop-types";
-import cities from "../../mocks/cities";
-
+import {Cities} from '../../consts';
+import {getCities, getCurrentCity} from "../../store/selectors/selectors";
 
 const CitiesList = (props) => {
-  const {currentCity, setCity, getOffers} = props;
+  const {currentCity, setCity, cities} = props;
   const isActive = (city) => {
     return city === currentCity;
   };
-  const onCityClick = (id) => {
-    setCity(id);
-    getOffers(id);
+  const cityClickHandler = (city) => {
+    setCity(city);
   };
   return (
     <section className="locations container">
       <ul className="locations__list tabs__list">
         {cities.map((city, index) => (
-          <li key={index} className="locations__item">
+          <li key={`${city}-${index}`} className="locations__item">
             <a
               className={`locations__item-link tabs__item ${
                 isActive(city) ? `tabs__item--active` : ``
               }`}
-              href="#"
               onClick={() => {
-                onCityClick(index);
+                cityClickHandler(city);
               }}
             >
               <span>{city}</span>
@@ -38,16 +36,17 @@ const CitiesList = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  currentCity: state.currentCity,
+  currentCity: getCurrentCity(state),
+  cities: getCities(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
   setCity(index) {
-    dispatch(ActionCreator.setCity(index));
+    dispatch(filterActions.setCity(index));
   },
   getOffers(index) {
-    dispatch(ActionCreator.getOffers(index));
-  }
+    dispatch(getOffers(index));
+  },
 });
 
 export {CitiesList};
@@ -57,4 +56,12 @@ CitiesList.propTypes = {
   currentCity: PropTypes.string.isRequired,
   setCity: PropTypes.func.isRequired,
   getOffers: PropTypes.func.isRequired,
+  cities: PropTypes.arrayOf(PropTypes.oneOf([
+    Cities.PARIS,
+    Cities.COLOGNE,
+    Cities.BRUSSELS,
+    Cities.AMSTERDAM,
+    Cities.HAMBURG,
+    Cities.DUSSELDORF,
+  ])).isRequired,
 };

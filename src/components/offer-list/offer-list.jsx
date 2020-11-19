@@ -5,13 +5,13 @@ import {offerListTypes} from '../../consts';
 import {OfferListMain} from '../offer-list-main/offer-list-main';
 import {OfferListRoom} from '../offer-list-room/offer-list-room';
 import {connect} from "react-redux";
-import {ActionCreator} from "../../store/action";
+import {ActiveCardActions} from "../../store/action";
 
 const OfferList = (props) => {
-  const {type, offers, setActiveOffer, resetActiveOffer} = props;
+  const {type, offers, setActiveOfferId, resetActiveOffer} = props;
 
   const onMouseEnterHandler = (offer) => {
-    setActiveOffer(offer);
+    setActiveOfferId(offer.id);
   };
   const onMouseLeaveHandler = () => {
     resetActiveOffer();
@@ -32,19 +32,19 @@ const OfferList = (props) => {
 
 
 const mapDispatchToProps = (dispatch) => ({
-  setActiveOffer(offer) {
-    dispatch(ActionCreator.setActiveOffer(offer));
+  setActiveOfferId(id) {
+    dispatch(ActiveCardActions.setActiveOfferId(id));
   },
   resetActiveOffer() {
-    dispatch(ActionCreator.resetActiveOffer());
+    dispatch(ActiveCardActions.resetActiveOffer());
   }
 });
 
 OfferList.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
   type: PropTypes.oneOf([offerListTypes.MAIN, offerListTypes.ROOM]).isRequired,
-  setActiveOffer: PropTypes.func.isRequired,
+  setActiveOfferId: PropTypes.func.isRequired,
 };
 
 export {OfferList};
-export default connect(``, mapDispatchToProps)(OfferList);
+export default connect(null, mapDispatchToProps)(OfferList);
