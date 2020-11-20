@@ -19,6 +19,7 @@ export const cityPropType = PropTypes.shape({
   name: PropTypes.string.isRequired,
 });
 
+/* eslint-disable */
 export const offerPropType = PropTypes.shape({
   id: PropTypes.number.isRequired,
   city: cityPropType.isRequired,

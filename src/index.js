@@ -13,15 +13,15 @@ import {redirect} from "./store/middlewares/redirect";
 import {userActions} from "./store/action";
 
 const api = createAPI(
-  () => store.dispatch(userActions.requireAuthorization(AuthorizationStatus.NO_AUTH)),
+    () => store.dispatch(userActions.requireAuthorization(AuthorizationStatus.NO_AUTH))
 );
 
 const store = createStore(
-  rootReducer,
-  composeWithDevTools(
-    applyMiddleware(thunk.withExtraArgument(api)),
-    applyMiddleware(redirect),
-  ),
+    rootReducer,
+    composeWithDevTools(
+        applyMiddleware(thunk.withExtraArgument(api)),
+        applyMiddleware(redirect)
+    )
 );
 
 Promise.all([
@@ -30,10 +30,10 @@ Promise.all([
 ])
   .then(() => {
     ReactDOM.render(
-      <Provider store={store}>
-        <App/>
-      </Provider>,
-      document.getElementById(`root`),
+        <Provider store={store}>
+          <App/>
+        </Provider>,
+        document.getElementById(`root`)
     );
   });
 
