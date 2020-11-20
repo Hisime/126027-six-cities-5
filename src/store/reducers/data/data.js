@@ -1,9 +1,7 @@
-import {Cities, sortTypes} from "../../../consts";
+import {Cities} from "../../../consts";
 import {ActionType} from "../../action";
 import {extend} from "../../../utils";
 import sortList from "../../../mocks/sort-list";
-import {getFilteredOffers} from "../../selectors/selectors";
-
 
 const initialState = {
   cities: [

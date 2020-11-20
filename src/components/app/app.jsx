@@ -11,14 +11,14 @@ export const App = () => {
   return (
     <BrowserRouter history={browserHistory}>
       <Switch>
-        <Route path={AppRoute.LOGIN} exact render={({history}) => <Login/>}/>
+        <Route path={AppRoute.LOGIN} exact render={() => <Login/>}/>
         {/* <Route path="/offer/:id" exact>
           <Room offer={offers[0]} otherPlaces={otherPlaces}/>
         </Route> */}
         <PrivateRoute
           exact
           path={AppRoute.FAVORITES}
-          render={({history}) => {
+          render={() => {
             return (
               <Favorites/>
             );

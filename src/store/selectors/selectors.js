@@ -9,13 +9,13 @@ export const getCities = (state) => state[NameSpace.DATA].cities;
 export const getUserAuthStatus = (state) => state[NameSpace.USER].authorizationStatus;
 
 export const getFilteredOffers = createSelector(
-  getOffersList,
-  getSortType,
-  getCurrentCity,
-  (offers, currentSort, currentCity) => {
-    const filteredOffers = filterOffers(offers, currentCity);
-    return sortOffers(filteredOffers, currentSort);
-  },
+    getOffersList,
+    getSortType,
+    getCurrentCity,
+    (offers, currentSort, currentCity) => {
+      const filteredOffers = filterOffers(offers, currentCity);
+      return sortOffers(filteredOffers, currentSort);
+    }
 );
 
 const filterOffers = (offers, currentCity) => {
