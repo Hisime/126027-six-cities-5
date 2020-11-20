@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import CitiesList from "../cities-list/cities-list";
+import {getCurrentCity} from "../../store/selectors/selectors";
 
 export const MainEmpty = (props) => {
   const {currentCity} = props;
@@ -54,7 +55,7 @@ export const MainEmpty = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  currentCity: state.currentCity,
+  currentCity: getCurrentCity(state),
 });
 
 

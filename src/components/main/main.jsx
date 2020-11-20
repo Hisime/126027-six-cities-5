@@ -8,6 +8,8 @@ import CitiesList from '../cities-list/cities-list';
 import {connect} from "react-redux";
 import Sort from "../sort/sort";
 import MainEmpty from "../main-empty/main-empty";
+import UserNav from "../user-nav/user-nav";
+import {getCurrentCity, getFilteredOffers} from "../../store/selectors/selectors";
 
 export const Main = (props) => {
   const {offers, currentCity} = props;
@@ -27,13 +29,7 @@ export const Main = (props) => {
             </div>
             <nav className="header__nav">
               <ul className="header__nav-list">
-                <li className="header__nav-item user">
-                  <a className="header__nav-link header__nav-link--profile" href="#">
-                    <div className="header__avatar-wrapper user__avatar-wrapper">
-                    </div>
-                    <span className="header__user-name user__name">Oliver.conner@gmail.com</span>
-                  </a>
-                </li>
+                <UserNav/>
               </ul>
             </nav>
           </div>
@@ -51,7 +47,7 @@ export const Main = (props) => {
               <h2 className="visually-hidden">Places</h2>
               <b className="places__found">{rentCount} places to stay in {currentCity}</b>
               <Sort/>
-              <OfferList offers={offers} type={offerListTypes.MAIN}></OfferList>
+              <OfferList offers={offers} type={offerListTypes.MAIN}/>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map">
@@ -65,10 +61,9 @@ export const Main = (props) => {
   );
 };
 
-
 const mapStateToProps = (state) => ({
-  currentCity: state.currentCity,
-  offers: state.offers,
+  currentCity: getCurrentCity(state),
+  offers: getFilteredOffers(state),
 });
 
 export default connect(mapStateToProps)(Main);

@@ -18,7 +18,7 @@ export const OfferListMain = (props) => {
           onMouseEnterHandler={onMouseEnterHandler}
           onMouseLeaveHandler={onMouseLeaveHandler}
           classNames={classNames}
-        ></OfferCard>
+        />
       ))}
     </div>
   );
@@ -27,5 +27,5 @@ export const OfferListMain = (props) => {
 OfferListMain.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
   onMouseEnterHandler: PropTypes.func,
-  onMouseLeaveHandler: PropTypes.func
+  onMouseLeaveHandler: PropTypes.func,
 };

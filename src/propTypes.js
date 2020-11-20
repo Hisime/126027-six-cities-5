@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import {OfferType} from "./consts";
 
 export const reviewPropType = PropTypes.shape({
   avatar: PropTypes.string.isRequired,
@@ -9,31 +8,37 @@ export const reviewPropType = PropTypes.shape({
   text: PropTypes.string.isRequired
 });
 
+export const locationPropType = PropTypes.shape({
+  latitude: PropTypes.number.isRequired,
+  longitude: PropTypes.number.isRequired,
+  zoom: PropTypes.number.isRequired,
+});
+
+export const cityPropType = PropTypes.shape({
+  location: locationPropType.isRequired,
+  name: PropTypes.string.isRequired,
+});
+
+/* eslint-disable */
 export const offerPropType = PropTypes.shape({
   id: PropTypes.number.isRequired,
-  pictures: PropTypes.arrayOf(PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
-  })),
-  premium: PropTypes.bool.isRequired,
+  city: cityPropType.isRequired,
+  images: PropTypes.arrayOf(PropTypes.string),
+  description: PropTypes.string.isRequired,
+  is_premium: PropTypes.bool.isRequired,
+  location: locationPropType.isRequired,
   title: PropTypes.string.isRequired,
-  favorite: PropTypes.bool.isRequired,
-  rate: PropTypes.number.isRequired,
-  type: PropTypes.oneOf([
-    OfferType.APARTMENT,
-    OfferType.HOTEL,
-    OfferType.HOUSE,
-    OfferType.ROOM
-  ]).isRequired,
-  bedRoomsCount: PropTypes.number.isRequired,
-  guestsCount: PropTypes.number.isRequired,
+  is_favorite: PropTypes.bool.isRequired,
+  preview_image: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  type: PropTypes.string.isRequired,
+  max_adults: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
   host: PropTypes.shape({
-    image: PropTypes.string.isRequired,
+    avatar_url: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    super: PropTypes.bool.isRequired,
-    about: PropTypes.string.isRequired
+    is_pro: PropTypes.bool.isRequired,
   }),
-  features: PropTypes.arrayOf(PropTypes.string),
-  reviews: PropTypes.arrayOf(reviewPropType),
+  goods: PropTypes.arrayOf(PropTypes.string).isRequired,
 });

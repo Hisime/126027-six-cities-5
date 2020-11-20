@@ -18,7 +18,7 @@ export const OfferListRoom = (props) => {
           onMouseEnterHandler={onMouseEnterHandler}
           onMouseLeaveHandler={onMouseLeaveHandler}
           classNames={classNames}
-        ></OfferCard>
+        />
       ))}
     </div>
   );

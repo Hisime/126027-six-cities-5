@@ -6,29 +6,28 @@ import {Link} from "react-router-dom";
 export const OfferCard = (props) => {
   const {offer, onMouseEnterHandler, onMouseLeaveHandler, classNames} = props;
   const {
-    premium,
-    pictures,
     price,
-    favorite,
-    rate,
+    rating,
     title,
     type,
   } = offer;
-  const [picture] = pictures;
+  const isPremium = offer.is_premium;
+  const previewImage = offer.preview_image;
+  const isFavorite = offer.is_favorite;
   return (
     <article className={`place-card ${classNames.placeCard}`} onMouseEnter={() => {
       onMouseEnterHandler(offer);
     }} onMouseLeave={() => {
       onMouseLeaveHandler();
     }}>
-      {premium && (
+      {isPremium && (
         <div className="place-card__mark">
           <span>Premium</span>
         </div>
       )}
       <div className={`place-card__image-wrapper ${classNames.placeCardImageWrapper}`}>
         <Link to="/offer/1">
-          <img className="place-card__image" src={picture.src} width="260" height="200" alt={picture.alt}/>
+          <img className="place-card__image" src={previewImage} width="260" height="200" alt="Place image"/>
         </Link>
       </div>
       <div className="place-card__info">
@@ -37,16 +36,18 @@ export const OfferCard = (props) => {
             <b className="place-card__price-value">&euro;{price}</b>
             <span className="place-card__price-text">&#47;&nbsp;night</span>
           </div>
-          <button className={`place-card__bookmark-button button ${favorite ? `place-card__bookmark-button--active` : ``}`} type="button">
+          <button
+            className={`place-card__bookmark-button button ${isFavorite ? `place-card__bookmark-button--active` : ``}`}
+            type="button">
             <svg className="place-card__bookmark-icon" width="18" height="19">
-              <use xlinkHref="#icon-bookmark"></use>
+              <use xlinkHref="#icon-bookmark"/>
             </svg>
             <span className="visually-hidden">To bookmarks</span>
           </button>
         </div>
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">
-            <span style={{width: `${rate * 20}px`}}></span>
+            <span style={{width: `${rating * 20}px`}}/>
             <span className="visually-hidden">Rating</span>
           </div>
         </div>
