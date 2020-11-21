@@ -5,7 +5,7 @@ export const reviewPropType = PropTypes.shape({
   name: PropTypes.string.isRequired,
   rate: PropTypes.number.isRequired,
   date: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 });
 
 export const locationPropType = PropTypes.shape({

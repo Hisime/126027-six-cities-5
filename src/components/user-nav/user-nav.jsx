@@ -5,6 +5,7 @@ import UserNavUnauth from "../user-nav-unauth/user-nav-unauth";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 import {AppRoute} from "../../consts";
+import {getUser} from "../../store/selectors/selectors";
 
 const UserNav = (props) => {
   const {user} = props;
@@ -25,8 +26,8 @@ const UserNav = (props) => {
 
 export {UserNav};
 
-const mapStateToProps = ({USER}) => ({
-  user: USER.user,
+const mapStateToProps = (state) => ({
+  user: getUser(state),
 });
 
 UserNav.propTypes = userNavProp;

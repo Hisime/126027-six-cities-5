@@ -31,10 +31,6 @@ export const getOffers = (offers) => ({
   payload: offers,
 });
 
-export const filterOffers = () => ({
-  type: ActionType.FILTER_OFFERS,
-});
-
 export const userActions = {
   requireAuthorization: (status) => ({
     type: ActionType.REQUIRED_AUTHORIZATION,

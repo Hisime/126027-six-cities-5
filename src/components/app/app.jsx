@@ -1,17 +1,26 @@
 import React from "react";
-import {Router as BrowserRouter, Switch, Route, Redirect} from "react-router-dom";
+import {Redirect, Route, Router as BrowserRouter, Switch} from "react-router-dom";
 import Main from "../main/main";
-import Login from "../login/login";
 import {Favorites} from "../favorites/favorites";
 import PrivateRoute from "../private-route/private-route";
 import browserHistory from "../../browser-history/browser-history";
 import {AppRoute} from "../../consts";
+import AuthRoute from "../auth-route/auth-route";
+import Login from "../login/login";
 
 export const App = () => {
   return (
     <BrowserRouter history={browserHistory}>
       <Switch>
-        <Route path={AppRoute.LOGIN} exact render={() => <Login/>}/>
+        <AuthRoute
+          exact
+          path={AppRoute.LOGIN}
+          render={() => {
+            return (
+              <Login />
+            );
+          }}
+        />
         {/* <Route path="/offer/:id" exact>
           <Room offer={offers[0]} otherPlaces={otherPlaces}/>
         </Route> */}

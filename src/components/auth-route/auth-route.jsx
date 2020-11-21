@@ -6,7 +6,7 @@ import {AppRoute, AuthorizationStatus} from "../../consts";
 import {getUserAuthStatus} from "../../store/selectors/selectors";
 
 
-const PrivateRoute = (props) => {
+const AuthRoute = (props) => {
   const {render, path, exact, authorizationStatus} = props;
 
   return (
@@ -15,16 +15,16 @@ const PrivateRoute = (props) => {
       exact={exact}
       render={(routeProps) => {
         return (
-          authorizationStatus === AuthorizationStatus.AUTH
+          authorizationStatus === AuthorizationStatus.NO_AUTH
             ? render(routeProps)
-            : <Redirect to={AppRoute.LOGIN}/>
+            : <Redirect to={AppRoute.MAIN}/>
         );
       }}
     />
   );
 };
 
-PrivateRoute.propTypes = {
+AuthRoute.propTypes = {
   authorizationStatus: PropTypes.string.isRequired,
   exact: PropTypes.bool.isRequired,
   path: PropTypes.string.isRequired,
@@ -36,5 +36,5 @@ const mapStateToProps = (state) => ({
 });
 
 
-export {PrivateRoute};
-export default connect(mapStateToProps)(PrivateRoute);
+export {AuthRoute};
+export default connect(mapStateToProps)(AuthRoute);
