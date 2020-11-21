@@ -4,10 +4,21 @@ import {sortTypes} from "../../consts";
 
 export const getOffersList = (state) => state[NameSpace.DATA].offers;
 export const getSortType = (state) => state[NameSpace.DATA].currentSort;
+export const getOffer = (state) => state[NameSpace.DATA].offer;
+export const getComments = (state) => state[NameSpace.DATA].comments;
+export const getNearbyOffers = (state) => state[NameSpace.DATA].nearbyOffers;
 export const getCurrentCity = (state) => state[NameSpace.DATA].currentCity;
 export const getCities = (state) => state[NameSpace.DATA].cities;
 export const getUserAuthStatus = (state) => state[NameSpace.USER].authorizationStatus;
 export const getUser = (state) => state[NameSpace.USER].user;
+
+export const replaceOffer = (offer, offers) => {
+  const index = offers.findIndex((item) => item.id === offer.id);
+  if (index > -1) {
+    offers[index] = offer;
+  }
+  return JSON.parse(JSON.stringify(offers));
+};
 
 export const getFilteredOffers = createSelector(
     getOffersList,

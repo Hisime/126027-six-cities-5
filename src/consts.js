@@ -54,5 +54,14 @@ export const AppRoute = {
 export const APIRoute = {
   HOTELS: `/hotels`,
   LOGIN: `/login`,
+  COMMENTS: `/comments`,
   FAVORITE: `/favorite`,
+  NEARBY_OFFERS: `/nearby`,
+};
+
+export const FavoritesResponseTypes = {
+  MAIN: `MAIN`,
+  NEARBY_OFFERS: `NEARBY_OFFERS`,
+  FAVORITES: `FAVORITES`,
+  OFFER: `OFFER`,
 };

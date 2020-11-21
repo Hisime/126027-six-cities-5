@@ -1,12 +1,15 @@
 import React, {Fragment} from "react";
 import Rating from "../../mocks/rating";
+import {sendComment} from "../../store/api-actions";
+import {connect} from "react-redux";
+import PropTypes from "prop-types";
 
-export class ReviewForm extends React.PureComponent {
+class ReviewForm extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       rating: 0,
-      review: ``,
+      comment: ``,
     };
 
     this.handleFieldChange = this.handleFieldChange.bind(this);
@@ -16,11 +19,18 @@ export class ReviewForm extends React.PureComponent {
 
   handleSubmit(evt) {
     evt.preventDefault();
+    this.props.sendComment(this.props.id, this.state);
+  }
+
+  isDisabled() {
+    const commentMinLength = 50;
+    const {rating, comment} = this.state;
+    return !rating || comment.length < commentMinLength;
   }
 
   handleFieldChange(evt) {
-    const {name, value: review} = evt.target;
-    this.setState({[name]: review});
+    const {name, value: comment} = evt.target;
+    this.setState({[name]: comment});
   }
 
   handleRatingChange(evt) {
@@ -56,7 +66,7 @@ export class ReviewForm extends React.PureComponent {
         <textarea
           onChange={this.handleFieldChange}
           className="reviews__textarea form__textarea"
-          id="review" name="review"
+          id="review" name="comment"
           placeholder="Tell how was your stay, what you like and what can be improved"
         />
         <div className="reviews__button-wrapper">
@@ -64,9 +74,24 @@ export class ReviewForm extends React.PureComponent {
             To submit review please make sure to set <span className="reviews__star">rating</span> and describe your
             stay with at least <b className="reviews__text-amount">50 characters</b>.
           </p>
-          <button className="reviews__submit form__submit button" type="submit" disabled="">Submit</button>
+          <button className="reviews__submit form__submit button" type="submit"
+            disabled={this.isDisabled()}>Submit</button>
         </div>
       </form>
     );
   }
 }
+
+ReviewForm.propTypes = {
+  id: PropTypes.string.isRequired,
+  sendComment: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  sendComment(id, formData) {
+    dispatch(sendComment(id, formData));
+  },
+});
+
+export {ReviewForm};
+export default connect(null, mapDispatchToProps)(ReviewForm);
