@@ -13,7 +13,7 @@ export const ReviewsList = (props) => {
       </h2>
       <ul className="reviews__list">
         {reviews.map((review, i) => (
-          <ReviewItem key={i} review={review} />
+          <ReviewItem key={i} review={review}/>
         ))}
       </ul>
     </Fragment>

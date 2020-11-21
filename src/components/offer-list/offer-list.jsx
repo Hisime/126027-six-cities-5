@@ -19,10 +19,12 @@ const OfferList = (props) => {
   const getComponentByType = () => {
     switch (type) {
       case offerListTypes.MAIN: {
-        return <OfferListMain offers={offers} onMouseLeaveHandler={onMouseLeaveHandler} onMouseEnterHandler={onMouseEnterHandler}/>;
+        return <OfferListMain offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
+          onMouseEnterHandler={onMouseEnterHandler}/>;
       }
       case offerListTypes.ROOM: {
-        return <OfferListRoom offers={offers} onMouseLeaveHandler={onMouseLeaveHandler }onMouseEnterHandler={onMouseEnterHandler}/>;
+        return <OfferListRoom offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
+          onMouseEnterHandler={onMouseEnterHandler}/>;
       }
     }
     return ``;
@@ -37,7 +39,7 @@ const mapDispatchToProps = (dispatch) => ({
   },
   resetActiveOffer() {
     dispatch(ActiveCardActions.resetActiveOffer());
-  }
+  },
 });
 
 OfferList.propTypes = {

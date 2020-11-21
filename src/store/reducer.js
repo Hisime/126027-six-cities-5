@@ -31,7 +31,7 @@ const reducer = (state = initialState, action) => {
       });
     case ActionType.TOGGLE_SORT:
       return extend(state, {
-        isSortOpen: !state.isSortOpen
+        isSortOpen: !state.isSortOpen,
       });
     case ActionType.SET_SORT:
       const sortId = action.payload;

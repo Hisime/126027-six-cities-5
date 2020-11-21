@@ -7,6 +7,7 @@ export const getSortType = (state) => state[NameSpace.DATA].currentSort;
 export const getCurrentCity = (state) => state[NameSpace.DATA].currentCity;
 export const getCities = (state) => state[NameSpace.DATA].cities;
 export const getUserAuthStatus = (state) => state[NameSpace.USER].authorizationStatus;
+export const getUser = (state) => state[NameSpace.USER].user;
 
 export const getFilteredOffers = createSelector(
     getOffersList,

@@ -1,5 +1,4 @@
-import {OfferType} from "../consts";
-import {Features} from "../consts";
+import {Features, OfferType} from "../consts";
 
 export default [
   [
@@ -988,5 +987,5 @@ export default [
       coords: [52.3909553943508, 4.929309666406198],
     },
   ],
-  []
+  [],
 ];

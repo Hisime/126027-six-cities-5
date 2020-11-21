@@ -56,9 +56,11 @@ export const Room = (props) => {
                 <h1 className="property__name">
                   {offer.title}
                 </h1>
-                <button className={`property__bookmark-button button ${offer.favorite ? `property__bookmark-button--active` : ``}`} type="button">
+                <button
+                  className={`property__bookmark-button button ${offer.favorite ? `property__bookmark-button--active` : ``}`}
+                  type="button">
                   <svg className="place-card__bookmark-icon" width="31" height="33">
-                    <use xlinkHref="#icon-bookmark"></use>
+                    <use xlinkHref="#icon-bookmark"/>
                   </svg>
                   <span className="visually-hidden">To bookmarks</span>
                 </button>
@@ -98,8 +100,10 @@ export const Room = (props) => {
               <div className="property__host">
                 <h2 className="property__host-title">Meet the host</h2>
                 <div className="property__host-user user">
-                  <div className={`property__avatar-wrapper user__avatar-wrapper ${host.super ? `property__avatar-wrapper--pro` : ``}`}>
-                    <img className="property__avatar user__avatar" src={host.image} width="74" height="74" alt="Host avatar"/>
+                  <div
+                    className={`property__avatar-wrapper user__avatar-wrapper ${host.super ? `property__avatar-wrapper--pro` : ``}`}>
+                    <img className="property__avatar user__avatar" src={host.image} width="74" height="74"
+                      alt="Host avatar"/>
                   </div>
                   <span className="property__user-name">
                     {host.name}

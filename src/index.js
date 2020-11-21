@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {createStore, applyMiddleware} from "redux";
+import {applyMiddleware, createStore} from "redux";
 import thunk from "redux-thunk";
 import {createAPI} from "./services/api";
 import {checkAuth, fetchOffers} from "./store/api-actions";
