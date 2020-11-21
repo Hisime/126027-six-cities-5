@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import OfferList from '../offer-list/offer-list';
 import Map from '../map/map';
-import {offerListTypes} from '../../consts';
+import {AppRoute, offerListTypes} from '../../consts';
 import CitiesList from '../cities-list/cities-list';
 import {connect} from "react-redux";
 import Sort from "../sort/sort";
 import MainEmpty from "../main-empty/main-empty";
 import UserNav from "../user-nav/user-nav";
 import {getCurrentCity, getFilteredOffers} from "../../store/selectors/selectors";
+import {Link} from "react-router-dom";
 
 export const Main = (props) => {
   const {offers, currentCity} = props;
@@ -23,9 +24,9 @@ export const Main = (props) => {
         <div className="container">
           <div className="header__wrapper">
             <div className="header__left">
-              <a className="header__logo-link header__logo-link--active">
+              <Link className="header__logo-link header__logo-link--active" to={AppRoute.MAIN}>
                 <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41"/>
-              </a>
+              </Link>
             </div>
             <nav className="header__nav">
               <ul className="header__nav-list">

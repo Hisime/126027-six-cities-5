@@ -7,6 +7,7 @@ import browserHistory from "../../browser-history/browser-history";
 import {AppRoute} from "../../consts";
 import AuthRoute from "../auth-route/auth-route";
 import Login from "../login/login";
+import Room from "../room/room";
 
 export const App = () => {
   return (
@@ -21,9 +22,11 @@ export const App = () => {
             );
           }}
         />
-        {/* <Route path="/offer/:id" exact>
-          <Room offer={offers[0]} otherPlaces={otherPlaces}/>
-        </Route> */}
+        <Route path={`${AppRoute.OFFER}/:id`} exact
+          render={(props) => {
+            return <Room {...props}/>;
+          }}>
+        </Route>
         <PrivateRoute
           exact
           path={AppRoute.FAVORITES}
