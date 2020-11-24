@@ -7,6 +7,10 @@ import {connect} from "react-redux";
 import {toggleFavorite} from "../../store/api-actions";
 
 const OfferCard = (props) => {
+  let imgSize = {
+    width: 260,
+    height: 200,
+  };
   const {
     favoritesResponseType,
     offer,
@@ -20,6 +24,7 @@ const OfferCard = (props) => {
     onMouseLeaveHandler,
     classNames
   } = props;
+  imgSize = props.imgSize ? props.imgSize : imgSize;
   const type = OfferType[offer.type.toUpperCase()];
   const isPremium = offer.is_premium;
   const previewImage = offer.preview_image;
@@ -40,10 +45,11 @@ const OfferCard = (props) => {
       )}
       <div className={`place-card__image-wrapper ${classNames.placeCardImageWrapper}`}>
         <Link to={`${AppRoute.OFFER}/${id}`}>
-          <img className="place-card__image" src={previewImage} width="260" height="200" alt="Place image"/>
+          <img className="place-card__image" src={previewImage} width={imgSize.width} height={imgSize.width}
+            alt="Place image"/>
         </Link>
       </div>
-      <div className="place-card__info">
+      <div className={`place-card__info ${classNames.cardInfo}`}>
         <div className="place-card__price-wrapper">
           <div className="place-card__price">
             <b className="place-card__price-value">&euro;{price}</b>
@@ -87,7 +93,12 @@ OfferCard.propTypes = {
   classNames: PropTypes.shape({
     placeCard: PropTypes.string,
     placeCardImageWrapper: PropTypes.string,
+    cardInfo: PropTypes.string,
   }).isRequired,
+  imgSize: PropTypes.shape({
+    width: PropTypes.number,
+    height: PropTypes.number,
+  })
 };
 
 const mapDispatchToProps = (dispatch) => ({

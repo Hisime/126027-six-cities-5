@@ -41,5 +41,5 @@ export const ReviewItem = (props) => {
 };
 
 ReviewItem.propTypes = {
-  review: reviewPropType,
+  review: reviewPropType.isRequired,
 };

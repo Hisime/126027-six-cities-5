@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should ReviewsList render correctly 1`] = `
+Array [
+  <h2
+    className="reviews__title"
+  >
+    Reviews ·
+     
+    <span
+      className="reviews__amount"
+    >
+      3
+    </span>
+  </h2>,
+  <ul
+    className="reviews__list"
+  >
+    <li
+      className="reviews__item"
+    >
+      <div
+        className="reviews__user user"
+      >
+        <div
+          className="reviews__avatar-wrapper user__avatar-wrapper"
+        >
+          <img
+            alt="Reviews avatar"
+            className="reviews__avatar user__avatar"
+            height="54"
+            src="https://assets.htmlacademy.ru/intensives/javascript-3/avatar/2.jpg"
+            width="54"
+          />
+        </div>
+        <span
+          className="reviews__user-name"
+        >
+          Jack
+        </span>
+      </div>
+      <div
+        className="reviews__info"
+      >
+        <div
+          className="reviews__rating rating"
+        >
+          <div
+            className="reviews__stars rating__stars"
+          >
+            <span
+              style={
+                Object {
+                  "width": "100px",
+                }
+              }
+            />
+            <span
+              className="visually-hidden"
+            >
+              Rating
+            </span>
+          </div>
+        </div>
+        <p
+          className="reviews__text"
+        >
+          This villa is perfect in every way: the view on mountains and waterfalls, the hot tub and the villa itself. The evening here became a great continuation of our journeys over country.
+        </p>
+        <time
+          className="reviews__time"
+          dateTime="2020-10-10T13:38:44.753Z"
+        >
+          2020-10-10T13:38:44.753Z
+        </time>
+      </div>
+    </li>
+    <li
+      className="reviews__item"
+    >
+      <div
+        className="reviews__user user"
+      >
+        <div
+          className="reviews__avatar-wrapper user__avatar-wrapper"
+        >
+          <img
+            alt="Reviews avatar"
+            className="reviews__avatar user__avatar"
+            height="54"
+            src="https://assets.htmlacademy.ru/intensives/javascript-3/avatar/9.jpg"
+            width="54"
+          />
+        </div>
+        <span
+          className="reviews__user-name"
+        >
+          Sophie
+        </span>
+      </div>
+      <div
+        className="reviews__info"
+      >
+        <div
+          className="reviews__rating rating"
+        >
+          <div
+            className="reviews__stars rating__stars"
+          >
+            <span
+              style={
+                Object {
+                  "width": "40px",
+                }
+              }
+            />
+            <span
+              className="visually-hidden"
+            >
+              Rating
+            </span>
+          </div>
+        </div>
+        <p
+          className="reviews__text"
+        >
+          I stayed here for one night and it was an unpleasant experience.
+        </p>
+        <time
+          className="reviews__time"
+          dateTime="2020-10-10T13:38:44.753Z"
+        >
+          2020-10-10T13:38:44.753Z
+        </time>
+      </div>
+    </li>
+    <li
+      className="reviews__item"
+    >
+      <div
+        className="reviews__user user"
+      >
+        <div
+          className="reviews__avatar-wrapper user__avatar-wrapper"
+        >
+          <img
+            alt="Reviews avatar"
+            className="reviews__avatar user__avatar"
+            height="54"
+            src="https://assets.htmlacademy.ru/intensives/javascript-3/avatar/10.jpg"
+            width="54"
+          />
+        </div>
+        <span
+          className="reviews__user-name"
+        >
+          Christina
+        </span>
+      </div>
+      <div
+        className="reviews__info"
+      >
+        <div
+          className="reviews__rating rating"
+        >
+          <div
+            className="reviews__stars rating__stars"
+          >
+            <span
+              style={
+                Object {
+                  "width": "80px",
+                }
+              }
+            />
+            <span
+              className="visually-hidden"
+            >
+              Rating
+            </span>
+          </div>
+        </div>
+        <p
+          className="reviews__text"
+        >
+          I stayed here for one night and it was an unpleasant experience.
+        </p>
+        <time
+          className="reviews__time"
+          dateTime="2020-10-10T13:38:44.753Z"
+        >
+          2020-10-10T13:38:44.753Z
+        </time>
+      </div>
+    </li>
+  </ul>,
+]
+`;

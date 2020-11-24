@@ -5,21 +5,29 @@
   "description": "Личный проект «Шесть городов» от HTML Academy",
   "scripts": {
     "eslint": "eslint --ext .jsx --ext .js src/",
-    "test": "npm run eslint",
+    "test": "npm run eslint && npm run test.jest",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test.jest": "jest"
   },
   "devDependencies": {
     "@babel/core": "7.8.7",
     "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.8.3",
+    "@types/jest": "25.1.5",
+    "axios-mock-adapter": "1.17.0",
+    "babel-jest": "25.1.0",
     "babel-loader": "8.1.0",
     "css-loader": "5.0.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.5",
     "eslint": "5.13.0",
     "eslint-config-htmlacademy": "0.5.2",
     "eslint-plugin-react": "7.18.3",
     "file-loader": "6.1.1",
+    "jest": "25.1.0",
     "leaflet": "1.7.1",
+    "react-test-renderer": "16.12.0",
     "redux-devtools-extension": "2.13.8",
     "redux-thunk": "2.3.0",
     "style-loader": "2.0.0",
@@ -30,9 +38,16 @@
   "engines": {
     "node": "10"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
   "dependencies": {
     "axios": "0.19.2",
     "history": "4.10.1",
+    "leaflet-react": "3.0.5",
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",

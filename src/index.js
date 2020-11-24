@@ -10,10 +10,10 @@ import {Provider} from "react-redux";
 import {App} from "./components/app/app";
 import rootReducer from './store/reducers/root-reducer';
 import {redirect} from "./store/middlewares/redirect";
-import {userActions} from "./store/action";
+import {UserActions} from "./store/action";
 
 const api = createAPI(
-    () => store.dispatch(userActions.requireAuthorization(AuthorizationStatus.NO_AUTH))
+    () => store.dispatch(UserActions.requireAuthorization(AuthorizationStatus.NO_AUTH))
 );
 
 const store = createStore(

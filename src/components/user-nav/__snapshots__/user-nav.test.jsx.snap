@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should UserNav render correctly 1`] = `
+<li
+  className="header__nav-item user"
+>
+  <a
+    className="header__nav-link header__nav-link--profile"
+    href="/favorites"
+    onClick={[Function]}
+  >
+    <div
+      className="header__avatar-wrapper user__avatar-wrapper"
+      style={
+        Object {
+          "backgroundImage": "url(https://assets.htmlacademy.ru/intensives/javascript-3/avatar/6.jpg)",
+        }
+      }
+    />
+    <span
+      className="header__user-name user__name"
+    >
+      adawd@awda.ru
+    </span>
+  </a>
+</li>
+`;
