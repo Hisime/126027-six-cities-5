@@ -8,7 +8,8 @@ class ReviewForm extends React.PureComponent {
   constructor(props) {
     super(props);
 
-    this.ratingRef = createRef();
+    this.ratingRef = [];
+    this.formRef = createRef();
     this.commentRef = createRef();
     this.commentMinLength = 50;
 
@@ -18,16 +19,17 @@ class ReviewForm extends React.PureComponent {
   handleSubmit(evt) {
     evt.preventDefault();
     const formData = {
-      rating: this.ratingRef.current.value,
+      rating: this.ratingRef.find((item) => item.checked).value,
       comment: this.commentRef.current.value
     };
     this.props.sendComment(this.props.id, formData);
+    this.formRef.current.reset();
   }
 
   render() {
     const {ratingList} = this.props;
     return (
-      <form className="reviews__form form" action="#" method="post" onSubmit={this.handleSubmit}>
+      <form ref={this.formRef} className="reviews__form form" action="#" method="post" onSubmit={this.handleSubmit}>
         <label className="reviews__label form__label" htmlFor="review">Your review</label>
         <div className="reviews__rating-form form__rating">
           {ratingList.map((rate, i) => (
@@ -36,7 +38,9 @@ class ReviewForm extends React.PureComponent {
                 onChange={this.handleRatingChange}
                 className="form__rating-input visually-hidden"
                 name="rating"
-                ref={this.ratingRef}
+                ref={(ref) => {
+                  this.ratingRef[i] = ref;
+                }}
                 required
                 value={rate.value}
                 id={`${rate.value}-stars`}
@@ -65,8 +69,7 @@ class ReviewForm extends React.PureComponent {
             To submit review please make sure to set <span className="reviews__star">rating</span> and describe your
             stay with at least <b className="reviews__text-amount">{this.commentMinLength} characters</b>.
           </p>
-          <button className="reviews__submit form__submit button" type="submit"
-          >Submit</button>
+          <button className="reviews__submit form__submit button" type="submit">Submit</button>
         </div>
       </form>
     );

@@ -16,7 +16,6 @@ const OfferCard = (props) => {
     offer,
     offer: {
       price,
-      rating,
       title,
       id,
     },
@@ -24,6 +23,7 @@ const OfferCard = (props) => {
     onMouseLeaveHandler,
     classNames
   } = props;
+  const rating = Math.round(props.offer.rating);
   imgSize = props.imgSize ? props.imgSize : imgSize;
   const type = OfferType[offer.type.toUpperCase()];
   const isPremium = offer.is_premium;
@@ -67,7 +67,7 @@ const OfferCard = (props) => {
         </div>
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">
-            <span style={{width: `${rating * 20}px`}}/>
+            <span style={{width: `${rating * 20}%`}}/>
             <span className="visually-hidden">Rating</span>
           </div>
         </div>

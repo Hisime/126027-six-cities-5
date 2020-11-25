@@ -21,9 +21,8 @@ describe(`ReviewForm works correctly`, () => {
   it(`Should form be sent`, () => {
     const form = reviewForm.find(`.reviews__form`);
     const instance = reviewForm.instance();
-    instance.ratingRef.current = {
-      value: 4,
-    };
+    instance.formRef.current = {reset: () => {}};
+    instance.ratingRef = [{checked: true, value: 3}];
     instance.commentRef.current = {
       value: `TEST`,
     };

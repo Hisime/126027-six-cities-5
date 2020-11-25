@@ -18,7 +18,7 @@ exports[`Should Room render correctly 1`] = `
         >
           <a
             className="header__logo-link header__logo-link--active"
-            href="/main"
+            href="/"
             onClick={[Function]}
           >
             <img
@@ -179,7 +179,7 @@ exports[`Should Room render correctly 1`] = `
               <span
                 style={
                   Object {
-                    "width": "76px",
+                    "width": "80%",
                   }
                 }
               />
@@ -783,7 +783,7 @@ exports[`Should Room render correctly 1`] = `
                   <span
                     style={
                       Object {
-                        "width": "76px",
+                        "width": "80%",
                       }
                     }
                   />
@@ -883,7 +883,7 @@ exports[`Should Room render correctly 1`] = `
                   <span
                     style={
                       Object {
-                        "width": "86px",
+                        "width": "80%",
                       }
                     }
                   />
@@ -983,7 +983,7 @@ exports[`Should Room render correctly 1`] = `
                   <span
                     style={
                       Object {
-                        "width": "92px",
+                        "width": "100%",
                       }
                     }
                   />

@@ -44,6 +44,11 @@ export const OfferListType = {
   FAVORITES: `FAVORITES`,
 };
 
+export const LogoType = {
+  HEADER: `HEADER`,
+  FOOTER: `FOOTER`,
+};
+
 export const SortType = {
   POPULAR: `POPULAR`,
   PRICE_ASC: `PRICE_ASC`,
@@ -58,7 +63,7 @@ export const AuthorizationStatus = {
 
 export const AppRoute = {
   LOGIN: `/login`,
-  MAIN: `/main`,
+  MAIN: `/`,
   FAVORITES: `/favorites`,
   OFFER: `/offer`,
 };

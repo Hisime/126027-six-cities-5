@@ -69,7 +69,7 @@ const sortOffers = (offersList, sortType) => {
     case SortType.PRICE_DES:
       return sortedOffers.sort((a, b) => b.price - a.price);
     case SortType.TOP_DES:
-      return sortedOffers.sort((a, b) => b.rate - a.rate);
+      return sortedOffers.sort((a, b) => b.rating - a.rating);
     default:
       return sortedOffers;
   }
