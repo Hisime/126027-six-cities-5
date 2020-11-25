@@ -1,7 +1,8 @@
 import React from "react";
 import {Redirect, Route, Router as BrowserRouter, Switch} from "react-router-dom";
 import Main from "../main/main";
-import {Favorites} from "../favorites/favorites";
+import PropTypes from 'prop-types';
+import Favorites from "../favorites/favorites";
 import PrivateRoute from "../private-route/private-route";
 import browserHistory from "../../browser-history/browser-history";
 import {AppRoute} from "../../consts";
@@ -24,15 +25,15 @@ export const App = () => {
         />
         <Route path={`${AppRoute.OFFER}/:id`} exact
           render={(props) => {
-            return <Room {...props}/>;
+            return <Room key={props.match.params.id} {...props}/>;
           }}>
         </Route>
         <PrivateRoute
           exact
           path={AppRoute.FAVORITES}
-          render={() => {
+          render={(props) => {
             return (
-              <Favorites/>
+              <Favorites {...props}/>
             );
           }}
         />
@@ -45,4 +46,8 @@ export const App = () => {
       </Switch>
     </BrowserRouter>
   );
+};
+
+App.propTypes = {
+  match: PropTypes.object,
 };

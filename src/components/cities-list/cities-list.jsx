@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import {filterActions, getOffers} from "../../store/action";
+import {FilterActions} from "../../store/action";
 import PropTypes from "prop-types";
 import {Cities} from '../../consts';
 import {getCities, getCurrentCity} from "../../store/selectors/selectors";
@@ -41,11 +41,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  setCity(index) {
-    dispatch(filterActions.setCity(index));
-  },
-  getOffers(index) {
-    dispatch(getOffers(index));
+  setCity(city) {
+    dispatch(FilterActions.setCity(city));
   },
 });
 
@@ -55,7 +52,6 @@ export default connect(mapStateToProps, mapDispatchToProps)(CitiesList);
 CitiesList.propTypes = {
   currentCity: PropTypes.string.isRequired,
   setCity: PropTypes.func.isRequired,
-  getOffers: PropTypes.func.isRequired,
   cities: PropTypes.arrayOf(PropTypes.oneOf([
     Cities.PARIS,
     Cities.COLOGNE,

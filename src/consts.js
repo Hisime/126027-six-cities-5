@@ -28,8 +28,9 @@ export const Features = {
 };
 
 export const offerListTypes = {
-  MAIN: `Main`,
-  ROOM: `Room`,
+  MAIN: `MAIN`,
+  ROOM: `ROOM`,
+  FAVORITES: `FAVORITES`,
 };
 
 export const sortTypes = {

@@ -1,8 +1,8 @@
 import React, {Fragment} from "react";
-import Rating from "../../mocks/rating";
 import {sendComment} from "../../store/api-actions";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
+import {getRatingList} from "../../store/selectors/selectors";
 
 class ReviewForm extends React.PureComponent {
   constructor(props) {
@@ -38,13 +38,13 @@ class ReviewForm extends React.PureComponent {
     this.setState({[name]: rating});
   }
 
-
   render() {
+    const {ratingList} = this.props;
     return (
       <form className="reviews__form form" action="#" method="post" onSubmit={this.handleSubmit}>
         <label className="reviews__label form__label" htmlFor="review">Your review</label>
         <div className="reviews__rating-form form__rating">
-          {Rating.map((rate, i) => (
+          {ratingList.map((rate, i) => (
             <Fragment key={i}>
               <input
                 onChange={this.handleRatingChange}
@@ -85,7 +85,15 @@ class ReviewForm extends React.PureComponent {
 ReviewForm.propTypes = {
   id: PropTypes.string.isRequired,
   sendComment: PropTypes.func.isRequired,
+  ratingList: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.number,
+    title: PropTypes.string,
+  })).isRequired,
 };
+
+const mapStateToProps = (dispatch) => ({
+  ratingList: getRatingList(dispatch),
+});
 
 const mapDispatchToProps = (dispatch) => ({
   sendComment(id, formData) {
@@ -94,4 +102,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export {ReviewForm};
-export default connect(null, mapDispatchToProps)(ReviewForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ReviewForm);

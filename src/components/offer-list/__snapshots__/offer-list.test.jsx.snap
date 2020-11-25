@@ -1,0 +1,8806 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should OfferList render correctly 1`] = `
+<div
+  className="cities__places-list places__list tabs__content"
+>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/1"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            493
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "76px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/1"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/2"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            323
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/2"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/3"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            218
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "92px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/3"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/4"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            440
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "92px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/4"
+          onClick={[Function]}
+        >
+          Perfectly located Castro
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/5"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            134
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/5"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/6"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            226
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "60px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/6"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/7"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            277
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "46px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/7"
+          onClick={[Function]}
+        >
+          Loft Studio in the Central Area
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/8"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/12.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            129
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "46px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/8"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/9"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            308
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "98px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/9"
+          onClick={[Function]}
+        >
+          Canal View Prinsengracht
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/10"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/9.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            125
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "84px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/10"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/11"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/10.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            190
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/11"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/12"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            154
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "78px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/12"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/13"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/12.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            363
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/13"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/14"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            232
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/14"
+          onClick={[Function]}
+        >
+          House in countryside
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/15"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            999
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "70px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/15"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/16"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            479
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/16"
+          onClick={[Function]}
+        >
+          Loft Studio in the Central Area
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/17"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/18.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            226
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "62px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/17"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/18"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/20.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            369
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "94px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/18"
+          onClick={[Function]}
+        >
+          Nice, cozy, warm big bed apartment
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/19"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            662
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "66px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/19"
+          onClick={[Function]}
+        >
+          Beautiful & luxurious apartment at great location
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/20"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            672
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "60px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/20"
+          onClick={[Function]}
+        >
+          Nice, cozy, warm big bed apartment
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/21"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            700
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "82px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/21"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/22"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/5.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            175
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "78px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/22"
+          onClick={[Function]}
+        >
+          Beautiful & luxurious apartment at great location
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/23"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            235
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/23"
+          onClick={[Function]}
+        >
+          The Pondhouse - A Magical Place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/24"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/19.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            332
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/24"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/25"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/19.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            365
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "48px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/25"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/26"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/18.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            288
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "46px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/26"
+          onClick={[Function]}
+        >
+          Canal View Prinsengracht
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/27"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            100
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/27"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/28"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/4.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            915
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "96px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/28"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/29"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            144
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "84px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/29"
+          onClick={[Function]}
+        >
+          Perfectly located Castro
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/30"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/15.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            484
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "76px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/30"
+          onClick={[Function]}
+        >
+          The Pondhouse - A Magical Place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/31"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            109
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "92px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/31"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/32"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            255
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "66px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/32"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/33"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            195
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/33"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/34"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            485
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "50px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/34"
+          onClick={[Function]}
+        >
+          Nice, cozy, warm big bed apartment
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/35"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/5.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            119
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "90px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/35"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/36"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/20.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            624
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "46px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/36"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/37"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/17.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            374
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "62px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/37"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/38"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            933
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "88px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/38"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/39"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            499
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/39"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/40"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/2.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            758
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "90px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/40"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/41"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            839
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "90px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/41"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/42"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/2.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            275
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "68px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/42"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/43"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/2.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            200
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "72px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/43"
+          onClick={[Function]}
+        >
+          Beautiful & luxurious apartment at great location
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/44"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/10.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            173
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "90px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/44"
+          onClick={[Function]}
+        >
+          House in countryside
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/45"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/2.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            221
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/45"
+          onClick={[Function]}
+        >
+          Perfectly located Castro
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/46"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            293
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/46"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/47"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/19.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            298
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "70px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/47"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/48"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/12.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            135
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "64px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/48"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/49"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/15.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            410
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "92px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/49"
+          onClick={[Function]}
+        >
+          The Pondhouse - A Magical Place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/50"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            149
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "86px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/50"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/51"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/19.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            183
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "98px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/51"
+          onClick={[Function]}
+        >
+          The Pondhouse - A Magical Place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/52"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            234
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "72px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/52"
+          onClick={[Function]}
+        >
+          House in countryside
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/53"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            931
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "76px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/53"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/54"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/4.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            299
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "78px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/54"
+          onClick={[Function]}
+        >
+          Canal View Prinsengracht
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/55"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            110
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "88px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/55"
+          onClick={[Function]}
+        >
+          Tile House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/56"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/17.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            392
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "80px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/56"
+          onClick={[Function]}
+        >
+          Canal View Prinsengracht
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/57"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/2.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            210
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "64px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/57"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/58"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/20.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            184
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "70px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/58"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/59"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/7.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            112
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "64px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/59"
+          onClick={[Function]}
+        >
+          House in countryside
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/60"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/10.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            243
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "90px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/60"
+          onClick={[Function]}
+        >
+          House in countryside
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/61"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            176
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "74px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/61"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/62"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/7.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            491
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/62"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/63"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            374
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "66px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/63"
+          onClick={[Function]}
+        >
+          Tile House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/64"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            155
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "62px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/64"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/65"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/4.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            548
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/65"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/66"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/8.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            111
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/66"
+          onClick={[Function]}
+        >
+          The Pondhouse - A Magical Place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/67"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/9.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            190
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "62px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/67"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/68"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/9.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            301
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "70px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/68"
+          onClick={[Function]}
+        >
+          Loft Studio in the Central Area
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        Premium
+      </span>
+    </div>
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/69"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/11.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            228
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/69"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/70"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/20.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            227
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/70"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/71"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            778
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "44px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/71"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/72"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/7.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            263
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "74px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/72"
+          onClick={[Function]}
+        >
+          Nice, cozy, warm big bed apartment
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/73"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            270
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "60px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/73"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/74"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            791
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/74"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/75"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/18.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            192
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "52px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/75"
+          onClick={[Function]}
+        >
+          Wood and stone place
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Private Room
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/76"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/17.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            119
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "84px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/76"
+          onClick={[Function]}
+        >
+          Beautiful & luxurious apartment at great location
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/77"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/15.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            235
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "78px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/77"
+          onClick={[Function]}
+        >
+          Loft Studio in the Central Area
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/78"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/10.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            779
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "88px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/78"
+          onClick={[Function]}
+        >
+          The house among olive 
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/79"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/18.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            320
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "64px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/79"
+          onClick={[Function]}
+        >
+          Beautiful & luxurious apartment at great location
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/80"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            600
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "60px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/80"
+          onClick={[Function]}
+        >
+          Canal View Prinsengracht
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/81"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/13.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            230
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "48px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/81"
+          onClick={[Function]}
+        >
+          Waterfront with extraordinary view
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Apartment
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/82"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/16.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            918
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "98px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/82"
+          onClick={[Function]}
+        >
+          Perfectly located Castro
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/83"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/9.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            844
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "74px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/83"
+          onClick={[Function]}
+        >
+          Amazing and Extremely Central Flat
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/84"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/14.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            647
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/84"
+          onClick={[Function]}
+        >
+          Nice, cozy, warm big bed apartment
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/85"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/6.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            313
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "82px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/85"
+          onClick={[Function]}
+        >
+          The Joshua Tree House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/86"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/7.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            744
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button "
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "42px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/86"
+          onClick={[Function]}
+        >
+          Penthouse, 4-5 rooms + 5 balconies
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        House
+      </p>
+    </div>
+  </article>
+  <article
+    className="place-card cities__place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__image-wrapper cities__image-wrapper"
+    >
+      <a
+        href="/offer/87"
+        onClick={[Function]}
+      >
+        <img
+          alt="Place image"
+          className="place-card__image"
+          height={260}
+          src="https://assets.htmlacademy.ru/intensives/javascript-3/hotel/3.jpg"
+          width={260}
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info undefined"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            €
+            266
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            / night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button place-card__bookmark-button--active"
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "58px",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="/offer/87"
+          onClick={[Function]}
+        >
+          Tile House
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        Hotel
+      </p>
+    </div>
+  </article>
+</div>
+`;

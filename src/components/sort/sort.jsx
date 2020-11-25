@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import {filterActions} from "../../store/action";
+import {FilterActions} from "../../store/action";
 import sortProp from "./sort.prop";
 import {getSortType} from "../../store/selectors/selectors";
 
@@ -44,10 +44,10 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   toggleSort() {
-    dispatch(filterActions.toggleSort());
+    dispatch(FilterActions.toggleSort());
   },
   setSort(sortType) {
-    dispatch(filterActions.setSort(sortType));
+    dispatch(FilterActions.setSort(sortType));
   },
 });
 

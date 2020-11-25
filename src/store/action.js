@@ -12,7 +12,6 @@ export const ActionType = {
   RESET_ACTIVE_OFFER: `RESET_ACTIVE_OFFER`,
   REQUIRED_AUTHORIZATION: `REQUIRED_AUTHORIZATION`,
   REDIRECT_TO_ROUTE: `REDIRECT_TO_ROUTE`,
-  FILTER_OFFERS: `FILTER_OFFERS`,
   SET_USER: `SET_USER`,
 };
 
@@ -61,7 +60,7 @@ export const getComments = (comments) => ({
   payload: comments,
 });
 
-export const userActions = {
+export const UserActions = {
   requireAuthorization: (status) => ({
     type: ActionType.REQUIRED_AUTHORIZATION,
     payload: status,
@@ -72,7 +71,7 @@ export const userActions = {
   }),
 };
 
-export const filterActions = {
+export const FilterActions = {
   setCity: (id) => ({
     type: ActionType.SET_CITY,
     payload: id,

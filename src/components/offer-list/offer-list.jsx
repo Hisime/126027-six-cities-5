@@ -6,6 +6,7 @@ import {OfferListMain} from '../offer-list-main/offer-list-main';
 import {OfferListRoom} from '../offer-list-room/offer-list-room';
 import {connect} from "react-redux";
 import {ActiveCardActions} from "../../store/action";
+import {OfferListFavorites} from "../offers-list-favorites/offers-list-favorites";
 
 const OfferList = (props) => {
   const {type, offers, setActiveOfferId, resetActiveOffer} = props;
@@ -26,6 +27,10 @@ const OfferList = (props) => {
         return <OfferListRoom offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
           onMouseEnterHandler={onMouseEnterHandler}/>;
       }
+      case offerListTypes.FAVORITES: {
+        return <OfferListFavorites offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
+          onMouseEnterHandler={onMouseEnterHandler}/>;
+      }
     }
     return ``;
   };
@@ -44,7 +49,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 OfferList.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
-  type: PropTypes.oneOf([offerListTypes.MAIN, offerListTypes.ROOM]).isRequired,
+  type: PropTypes.oneOf([
+    offerListTypes.MAIN, offerListTypes.ROOM, offerListTypes.FAVORITES
+  ]).isRequired,
   setActiveOfferId: PropTypes.func.isRequired,
 };
 
