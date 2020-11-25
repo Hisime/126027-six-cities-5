@@ -73,7 +73,7 @@ exports[`Should OfferCard render correctly 1`] = `
         <span
           style={
             Object {
-              "width": "76px",
+              "width": "80%",
             }
           }
         />

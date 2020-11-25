@@ -6,9 +6,10 @@ import {offerPropType} from "../../propTypes";
 import {Logo} from "../logo/logo";
 import UserNav from "../user-nav/user-nav";
 import {fetchFavorites} from "../../store/api-actions";
-import {AppRoute, offerListTypes} from "../../consts";
+import {AppRoute, LogoType, OfferListType} from "../../consts";
 import OfferList from "../offer-list/offer-list";
 import {FilterActions} from "../../store/action";
+import {FavoritesEmpty} from "../favorites-empty/favorites-empty";
 
 export class Favorites extends React.PureComponent {
   constructor(props) {
@@ -32,6 +33,9 @@ export class Favorites extends React.PureComponent {
       return (
         <div className="preloader">PRELOADER</div>
       );
+    }
+    if (Object.keys(offersWithCities).length === 0) {
+      return <FavoritesEmpty/>;
     }
 
     return (
@@ -67,7 +71,7 @@ export class Favorites extends React.PureComponent {
                         </a>
                       </div>
                     </div>
-                    <OfferList offers={offers} type={offerListTypes.FAVORITES}/>
+                    <OfferList offers={offers} type={OfferListType.FAVORITES}/>
                   </li>
                 ))}
               </ul>
@@ -75,9 +79,7 @@ export class Favorites extends React.PureComponent {
           </div>
         </main>
         <footer className="footer container">
-          <a className="footer__logo-link" href="main.html">
-            <img className="footer__logo" src="img/logo.svg" alt="6 cities logo" width="64" height="33"/>
-          </a>
+          <Logo type={LogoType.FOOTER}/>
         </footer>
       </div>
     );

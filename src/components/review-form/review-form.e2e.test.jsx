@@ -2,7 +2,7 @@ import Enzyme, {shallow} from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import {ReviewForm} from "./review-form";
-import Rating from "../../mocks/rating";
+import {Ratings} from "../../consts";
 
 Enzyme.configure({
   adapter: new Adapter(),
@@ -14,18 +14,18 @@ describe(`ReviewForm works correctly`, () => {
       <ReviewForm
         id={`1`}
         sendComment={handleSubmit}
-        ratingList={Rating}
+        ratingList={Ratings}
       />
   );
 
-  it(`Should rating changes`, () => {
-    reviewForm.setState({rating: 2});
-    expect(reviewForm.state().rating).toBe(2);
-  });
-
   it(`Should form be sent`, () => {
     const form = reviewForm.find(`.reviews__form`);
-
+    const instance = reviewForm.instance();
+    instance.formRef.current = {reset: () => {}};
+    instance.ratingRef = [{checked: true, value: 3}];
+    instance.commentRef.current = {
+      value: `TEST`,
+    };
     form.simulate(`submit`, {preventDefault: () => {}});
     expect(handleSubmit).toHaveBeenCalledTimes(1);
   });

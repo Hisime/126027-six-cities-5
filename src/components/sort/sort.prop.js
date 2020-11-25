@@ -1,22 +1,22 @@
 import PropTypes from "prop-types";
-import {sortTypes} from "../../consts";
+import {SortType} from "../../consts";
 
 const sortPropType = PropTypes.shape({
   label: PropTypes.string.isRequired,
   value: PropTypes.oneOf([
-    sortTypes.POPULAR,
-    sortTypes.PRICE_ASC,
-    sortTypes.PRICE_DES,
-    sortTypes.TOP_DES,
+    SortType.POPULAR,
+    SortType.PRICE_ASC,
+    SortType.PRICE_DES,
+    SortType.TOP_DES,
   ]).isRequired,
 });
 
 export default {
   currentSort: PropTypes.oneOf([
-    sortTypes.POPULAR,
-    sortTypes.PRICE_ASC,
-    sortTypes.PRICE_DES,
-    sortTypes.TOP_DES,
+    SortType.POPULAR,
+    SortType.PRICE_ASC,
+    SortType.PRICE_DES,
+    SortType.TOP_DES,
   ]).isRequired,
   sortList: PropTypes.arrayOf(sortPropType).isRequired,
   isSortOpen: PropTypes.bool.isRequired,

@@ -1,6 +1,6 @@
 import {createSelector} from "reselect";
 import {NameSpace} from "../reducers/root-reducer";
-import {sortTypes} from "../../consts";
+import {SortType} from "../../consts";
 
 export const getOffersList = (state) => state[NameSpace.DATA].offers;
 export const getCurrentOffers = (state) => state[NameSpace.DATA].currentOffers;
@@ -64,12 +64,12 @@ const filterOffers = (offers, currentCity) => {
 const sortOffers = (offersList, sortType) => {
   const sortedOffers = JSON.parse(JSON.stringify(offersList));
   switch (sortType) {
-    case sortTypes.PRICE_ASC:
+    case SortType.PRICE_ASC:
       return sortedOffers.sort((a, b) => a.price - b.price);
-    case sortTypes.PRICE_DES:
+    case SortType.PRICE_DES:
       return sortedOffers.sort((a, b) => b.price - a.price);
-    case sortTypes.TOP_DES:
-      return sortedOffers.sort((a, b) => b.rate - a.rate);
+    case SortType.TOP_DES:
+      return sortedOffers.sort((a, b) => b.rating - a.rating);
     default:
       return sortedOffers;
   }

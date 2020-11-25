@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {Cities} from "../../consts";
+import {City} from "../../consts";
 import {Router} from "react-router-dom";
 import browserHistory from "../../browser-history/browser-history";
 import {mockStore} from "../../test-mocks/mockStore";
@@ -20,7 +20,7 @@ it(`Should Main render correctly`, () => {
         <Provider store={mockStore}>
           <Router history={browserHistory}>
             <Main
-              currentCity={Cities.PARIS}
+              currentCity={City.PARIS}
               offers={offersMock}
             />
           </Router>

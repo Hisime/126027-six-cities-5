@@ -3,7 +3,7 @@ import Adapter from "enzyme-adapter-react-16";
 import React from "react";
 import {OfferCard} from "./offer-card";
 import {offersMock} from "../../test-mocks/offers";
-import {FavoritesResponseTypes} from "../../consts";
+import {FavoritesResponseType} from "../../consts";
 
 Enzyme.configure({
   adapter: new Adapter(),
@@ -22,7 +22,7 @@ describe(`OfferCard works correctly`, () => {
   const cardComponent = shallow(
       <OfferCard
         offer={offersMock[0]}
-        favoritesResponseType={FavoritesResponseTypes.MAIN}
+        favoritesResponseType={FavoritesResponseType.MAIN}
         toggleFavorite={toggleFavorite}
         onMouseEnterHandler={handleMouseEnter}
         onMouseLeaveHandler={handleMouseLeave}

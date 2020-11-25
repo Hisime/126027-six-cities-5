@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
-import {offerListTypes} from '../../consts';
+import {OfferListType} from '../../consts';
 import {OfferListMain} from '../offer-list-main/offer-list-main';
 import {OfferListRoom} from '../offer-list-room/offer-list-room';
 import {connect} from "react-redux";
@@ -19,15 +19,15 @@ const OfferList = (props) => {
   };
   const getComponentByType = () => {
     switch (type) {
-      case offerListTypes.MAIN: {
+      case OfferListType.MAIN: {
         return <OfferListMain offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
           onMouseEnterHandler={onMouseEnterHandler}/>;
       }
-      case offerListTypes.ROOM: {
+      case OfferListType.ROOM: {
         return <OfferListRoom offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
           onMouseEnterHandler={onMouseEnterHandler}/>;
       }
-      case offerListTypes.FAVORITES: {
+      case OfferListType.FAVORITES: {
         return <OfferListFavorites offers={offers} onMouseLeaveHandler={onMouseLeaveHandler}
           onMouseEnterHandler={onMouseEnterHandler}/>;
       }
@@ -50,7 +50,7 @@ const mapDispatchToProps = (dispatch) => ({
 OfferList.propTypes = {
   offers: PropTypes.arrayOf(offerPropType).isRequired,
   type: PropTypes.oneOf([
-    offerListTypes.MAIN, offerListTypes.ROOM, offerListTypes.FAVORITES
+    OfferListType.MAIN, OfferListType.ROOM, OfferListType.FAVORITES
   ]).isRequired,
   setActiveOfferId: PropTypes.func.isRequired,
 };

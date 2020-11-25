@@ -18,7 +18,7 @@ exports[`Should Favorites render correctly 1`] = `
         >
           <a
             className="header__logo-link header__logo-link--active"
-            href="/main"
+            href="/"
             onClick={[Function]}
           >
             <img
@@ -170,7 +170,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "44px",
+                            "width": "40%",
                           }
                         }
                       />
@@ -270,7 +270,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "86px",
+                            "width": "80%",
                           }
                         }
                       />
@@ -370,7 +370,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "58px",
+                            "width": "60%",
                           }
                         }
                       />
@@ -470,7 +470,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "84px",
+                            "width": "80%",
                           }
                         }
                       />
@@ -594,7 +594,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "76px",
+                            "width": "80%",
                           }
                         }
                       />
@@ -694,7 +694,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "92px",
+                            "width": "100%",
                           }
                         }
                       />
@@ -801,7 +801,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "44px",
+                            "width": "40%",
                           }
                         }
                       />
@@ -901,7 +901,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "86px",
+                            "width": "80%",
                           }
                         }
                       />
@@ -1025,7 +1025,7 @@ exports[`Should Favorites render correctly 1`] = `
                       <span
                         style={
                           Object {
-                            "width": "84px",
+                            "width": "80%",
                           }
                         }
                       />
@@ -1064,7 +1064,8 @@ exports[`Should Favorites render correctly 1`] = `
   >
     <a
       className="footer__logo-link"
-      href="main.html"
+      href="/"
+      onClick={[Function]}
     >
       <img
         alt="6 cities logo"

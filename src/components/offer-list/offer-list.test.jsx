@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import {OfferList} from "./offer-list";
-import {offerListTypes} from "../../consts";
+import {OfferListType} from "../../consts";
 import {noop} from "../../test-mocks/mocks";
 import {offersMock} from "../../test-mocks/offers";
 import {mockStore} from "../../test-mocks/mockStore";
@@ -16,7 +16,7 @@ it(`Should OfferList render correctly`, () => {
           <Router history={browserHistory}>
             <OfferList offers={offersMock}
               setActiveOfferId={noop}
-              type={offerListTypes.MAIN}
+              type={OfferListType.MAIN}
             />
           </Router>
         </Provider>

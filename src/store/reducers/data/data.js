@@ -1,28 +1,27 @@
-import {Cities, FavoritesResponseTypes} from "../../../consts";
+import {City, FavoritesResponseType, Ratings} from "../../../consts";
 import {ActionType} from "../../action";
 import {extend} from "../../../utils";
 import sortList from "../../../mocks/sort-list";
 import {replaceOffer} from "../../selectors/selectors";
-import Rating from "../../../mocks/rating";
 
 const initialState = {
   cities: [
-    Cities.PARIS,
-    Cities.COLOGNE,
-    Cities.BRUSSELS,
-    Cities.AMSTERDAM,
-    Cities.HAMBURG,
-    Cities.DUSSELDORF,
+    City.PARIS,
+    City.COLOGNE,
+    City.BRUSSELS,
+    City.AMSTERDAM,
+    City.HAMBURG,
+    City.DUSSELDORF,
   ],
   offers: [],
   currentOffers: null,
   offer: null,
   comments: null,
   sortList,
-  currentCity: Cities.PARIS,
+  currentCity: City.PARIS,
   currentSort: sortList[0].value,
   isSortOpen: false,
-  ratingList: Rating,
+  ratingList: Ratings,
 };
 
 const data = (state = initialState, action) => {
@@ -35,11 +34,11 @@ const data = (state = initialState, action) => {
         }
       } = action;
       switch (type) {
-        case FavoritesResponseTypes.OFFER:
+        case FavoritesResponseType.OFFER:
           return extend(state, {
             offer,
           });
-        case FavoritesResponseTypes.MAIN:
+        case FavoritesResponseType.MAIN:
           return extend(state, {
             offers: replaceOffer(offer, state.offers),
           });

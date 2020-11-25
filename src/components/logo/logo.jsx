@@ -1,13 +1,26 @@
-import {AppRoute} from "../../consts";
-import {Link} from "react-router-dom";
+import {LogoType} from "../../consts";
+import PropTypes from "prop-types";
+import {LogoHeader} from "../logo-header/logo-header";
+import {LogoFooter} from "../logo-footer/logo-footer";
 import React from "react";
 
-const Logo = () => {
-  return (
-    <Link className="header__logo-link header__logo-link--active" to={AppRoute.MAIN}>
-      <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41"/>
-    </Link>
-  );
+const Logo = (props) => {
+  const {type} = props;
+  const getComponentByType = () => {
+    switch (type) {
+      case LogoType.HEADER:
+        return <LogoHeader />;
+      case LogoType.FOOTER:
+        return <LogoFooter />;
+      default:
+        return <LogoHeader />;
+    }
+  };
+  return getComponentByType();
+};
+
+Logo.propTypes = {
+  type: PropTypes.oneOf([LogoType.FOOTER, LogoType.HEADER]),
 };
 
 export {Logo};

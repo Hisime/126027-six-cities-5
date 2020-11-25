@@ -2,11 +2,11 @@ import React from "react";
 import OfferCard from "../offer-card/offer-card";
 import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
-import {FavoritesResponseTypes} from "../../consts";
+import {FavoritesResponseType} from "../../consts";
 
 export const OfferListRoom = (props) => {
   const {offers, onMouseEnterHandler, onMouseLeaveHandler} = props;
-  const favoritesResponseType = FavoritesResponseTypes.NEARBY_OFFERS;
+  const favoritesResponseType = FavoritesResponseType.NEARBY_OFFERS;
   const classNames = {
     placeCard: `near-places__card`,
     placeCardImageWrapper: `near-places__image-wrapper`,

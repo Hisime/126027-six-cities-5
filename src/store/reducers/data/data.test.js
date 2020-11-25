@@ -10,7 +10,7 @@ import {
   setOffer,
   UserActions,
 } from "../../action";
-import {APIRoute, AuthorizationStatus, Cities, FavoritesResponseTypes, sortTypes} from "../../../consts";
+import {APIRoute, AuthorizationStatus, City, FavoritesResponseType, SortType} from "../../../consts";
 import {offersMock} from "../../../test-mocks/offers";
 import {reviewsMock} from "../../../test-mocks/reviews";
 import {user} from "../user/user";
@@ -28,9 +28,9 @@ import {
 
 describe(`FilterActions works correctly`, () => {
   it(`action setCity sets correct id`, () => {
-    expect(FilterActions.setCity(Cities.PARIS)).toEqual({
+    expect(FilterActions.setCity(City.PARIS)).toEqual({
       type: ActionType.SET_CITY,
-      payload: Cities.PARIS,
+      payload: City.PARIS,
     });
   });
 
@@ -41,9 +41,9 @@ describe(`FilterActions works correctly`, () => {
   });
 
   it(`action setSort sets correct sortType`, () => {
-    expect(FilterActions.setSort(sortTypes.POPULAR)).toEqual({
+    expect(FilterActions.setSort(SortType.POPULAR)).toEqual({
       type: ActionType.SET_SORT,
-      payload: sortTypes.POPULAR,
+      payload: SortType.POPULAR,
     });
   });
 });
@@ -100,9 +100,9 @@ it(`action getOffers sets data`, () => {
 });
 
 it(`action setOffer sets new offer to offersList`, () => {
-  expect(setOffer(offersMock[0], FavoritesResponseTypes.MAIN)).toEqual({
+  expect(setOffer(offersMock[0], FavoritesResponseType.MAIN)).toEqual({
     type: ActionType.SET_OFFER,
-    payload: {offer: offersMock[0], type: FavoritesResponseTypes.MAIN},
+    payload: {offer: offersMock[0], type: FavoritesResponseType.MAIN},
   });
 });
 
@@ -189,7 +189,7 @@ describe(`Async actions works correctly`, () => {
     const id = 1;
     const status = false;
     const numberStatus = 1;
-    const type = FavoritesResponseTypes.OFFER;
+    const type = FavoritesResponseType.OFFER;
     const toggler = toggleFavorite(id, status, type);
 
     apiMock
@@ -202,7 +202,7 @@ describe(`Async actions works correctly`, () => {
         expect(dispatch).toHaveBeenCalledTimes(1);
         expect(dispatch).toHaveBeenNthCalledWith(1, {
           type: ActionType.SET_OFFER,
-          payload: {offer: offersMock[0], type: FavoritesResponseTypes.OFFER},
+          payload: {offer: offersMock[0], type: FavoritesResponseType.OFFER},
         });
       });
   });

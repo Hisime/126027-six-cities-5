@@ -4,7 +4,7 @@ import browserHistory from "../../browser-history/browser-history";
 import {Router} from "react-router-dom";
 import {OfferCard} from "./offer-card";
 import {offersMock} from "../../test-mocks/offers";
-import {FavoritesResponseTypes} from "../../consts";
+import {FavoritesResponseType} from "../../consts";
 import {noop} from "../../test-mocks/mocks";
 
 const classNames = {
@@ -18,7 +18,7 @@ it(`Should OfferCard render correctly`, () => {
         <Router history={browserHistory}>
           <OfferCard
             offer={offersMock[0]}
-            favoritesResponseType={FavoritesResponseTypes.MAIN}
+            favoritesResponseType={FavoritesResponseType.MAIN}
             toggleFavorite={noop}
             onMouseEnterHandler={noop}
             onMouseLeaveHandler={noop}
