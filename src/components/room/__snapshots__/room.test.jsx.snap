@@ -390,7 +390,7 @@ exports[`Should Room render correctly 1`] = `
                     className="reviews__time"
                     dateTime="2020-10-10T13:38:44.753Z"
                   >
-                    2020-10-10T13:38:44.753Z
+                    October 2020
                   </time>
                 </div>
               </li>
@@ -449,7 +449,7 @@ exports[`Should Room render correctly 1`] = `
                     className="reviews__time"
                     dateTime="2020-10-10T13:38:44.753Z"
                   >
-                    2020-10-10T13:38:44.753Z
+                    October 2020
                   </time>
                 </div>
               </li>
@@ -508,7 +508,7 @@ exports[`Should Room render correctly 1`] = `
                     className="reviews__time"
                     dateTime="2020-10-10T13:38:44.753Z"
                   >
-                    2020-10-10T13:38:44.753Z
+                    October 2020
                   </time>
                 </div>
               </li>

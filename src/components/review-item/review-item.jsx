@@ -10,7 +10,11 @@ export const ReviewItem = (props) => {
       user,
     }
   } = props;
-
+  const options = {
+    month: `long`,
+    year: `numeric`,
+  };
+  const humanDate = new Date(props.review.date).toLocaleString(`en-US`, options);
   const avatarUrl = user.avatar_url;
   const userName = user.name;
   return (
@@ -34,7 +38,7 @@ export const ReviewItem = (props) => {
         <p className="reviews__text">
           {comment}
         </p>
-        <time className="reviews__time" dateTime={date}>{date}</time>
+        <time className="reviews__time" dateTime={date}>{humanDate}</time>
       </div>
     </li>
   );
