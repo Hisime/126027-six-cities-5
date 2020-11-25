@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, {createRef, Fragment} from "react";
 import {sendComment} from "../../store/api-actions";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
@@ -7,35 +7,21 @@ import {getRatingList} from "../../store/selectors/selectors";
 class ReviewForm extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      rating: 0,
-      comment: ``,
-    };
 
-    this.handleFieldChange = this.handleFieldChange.bind(this);
+    this.ratingRef = createRef();
+    this.commentRef = createRef();
+    this.commentMinLength = 50;
+
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleRatingChange = this.handleRatingChange.bind(this);
   }
 
   handleSubmit(evt) {
     evt.preventDefault();
-    this.props.sendComment(this.props.id, this.state);
-  }
-
-  isDisabled() {
-    const commentMinLength = 50;
-    const {rating, comment} = this.state;
-    return !rating || comment.length < commentMinLength;
-  }
-
-  handleFieldChange(evt) {
-    const {name, value: comment} = evt.target;
-    this.setState({[name]: comment});
-  }
-
-  handleRatingChange(evt) {
-    const {name, value: rating} = evt.target;
-    this.setState({[name]: rating});
+    const formData = {
+      rating: this.ratingRef.current.value,
+      comment: this.commentRef.current.value
+    };
+    this.props.sendComment(this.props.id, formData);
   }
 
   render() {
@@ -50,6 +36,8 @@ class ReviewForm extends React.PureComponent {
                 onChange={this.handleRatingChange}
                 className="form__rating-input visually-hidden"
                 name="rating"
+                ref={this.ratingRef}
+                required
                 value={rate.value}
                 id={`${rate.value}-stars`}
                 type="radio"
@@ -67,15 +55,18 @@ class ReviewForm extends React.PureComponent {
           onChange={this.handleFieldChange}
           className="reviews__textarea form__textarea"
           id="review" name="comment"
+          required
+          ref={this.commentRef}
+          minLength={50}
           placeholder="Tell how was your stay, what you like and what can be improved"
         />
         <div className="reviews__button-wrapper">
           <p className="reviews__help">
             To submit review please make sure to set <span className="reviews__star">rating</span> and describe your
-            stay with at least <b className="reviews__text-amount">50 characters</b>.
+            stay with at least <b className="reviews__text-amount">{this.commentMinLength} characters</b>.
           </p>
           <button className="reviews__submit form__submit button" type="submit"
-            disabled={this.isDisabled()}>Submit</button>
+          >Submit</button>
         </div>
       </form>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import {offerPropType} from "../../propTypes";
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
-import {AppRoute, FavoritesResponseTypes, OfferType} from "../../consts";
+import {AppRoute, FavoritesResponseType, OfferType} from "../../consts";
 import {connect} from "react-redux";
 import {toggleFavorite} from "../../store/api-actions";
 
@@ -83,9 +83,9 @@ const OfferCard = (props) => {
 OfferCard.propTypes = {
   offer: offerPropType,
   favoritesResponseType: PropTypes.oneOf([
-    FavoritesResponseTypes.MAIN,
-    FavoritesResponseTypes.FAVORITES,
-    FavoritesResponseTypes.NEARBY_OFFERS,
+    FavoritesResponseType.MAIN,
+    FavoritesResponseType.FAVORITES,
+    FavoritesResponseType.NEARBY_OFFERS,
   ]).isRequired,
   toggleFavorite: PropTypes.func.isRequired,
   onMouseEnterHandler: PropTypes.func,

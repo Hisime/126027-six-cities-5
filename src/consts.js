@@ -5,7 +5,31 @@ export const OfferType = {
   HOTEL: `Hotel`
 };
 
-export const Cities = {
+export const Ratings = [
+  {
+    title: `perfect`,
+    value: 5,
+  },
+  {
+    title: `good`,
+    value: 4,
+  },
+  {
+    title: `not bad`,
+    value: 3,
+  },
+  {
+    title: `badly`,
+    value: 2,
+  },
+  {
+    title: `terribly`,
+    value: 1
+  }
+];
+
+
+export const City = {
   PARIS: `Paris`,
   COLOGNE: `Cologne`,
   BRUSSELS: `Brussels`,
@@ -14,26 +38,13 @@ export const Cities = {
   DUSSELDORF: `Dusseldorf`
 };
 
-export const Features = {
-  WIFI: `Wi-Fi`,
-  HEATING: `Heating`,
-  KITCHEN: `Kitchen`,
-  FRIDGE: `Fridge`,
-  WASHING_MACHINE: `Washing machine`,
-  COFFEE_MACHINE: `Coffee machine`,
-  DISHWASHER: `Dishwasher`,
-  TOWELS: `Towels`,
-  BABY_SEAT: `Baby seat`,
-  CABEL_TV: `Cabel TV`
-};
-
-export const offerListTypes = {
+export const OfferListType = {
   MAIN: `MAIN`,
   ROOM: `ROOM`,
   FAVORITES: `FAVORITES`,
 };
 
-export const sortTypes = {
+export const SortType = {
   POPULAR: `POPULAR`,
   PRICE_ASC: `PRICE_ASC`,
   PRICE_DES: `PRICE_DES`,
@@ -60,7 +71,7 @@ export const APIRoute = {
   NEARBY_OFFERS: `/nearby`,
 };
 
-export const FavoritesResponseTypes = {
+export const FavoritesResponseType = {
   MAIN: `MAIN`,
   NEARBY_OFFERS: `NEARBY_OFFERS`,
   FAVORITES: `FAVORITES`,

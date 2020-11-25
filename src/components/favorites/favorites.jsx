@@ -6,7 +6,7 @@ import {offerPropType} from "../../propTypes";
 import {Logo} from "../logo/logo";
 import UserNav from "../user-nav/user-nav";
 import {fetchFavorites} from "../../store/api-actions";
-import {AppRoute, offerListTypes} from "../../consts";
+import {AppRoute, OfferListType} from "../../consts";
 import OfferList from "../offer-list/offer-list";
 import {FilterActions} from "../../store/action";
 
@@ -67,7 +67,7 @@ export class Favorites extends React.PureComponent {
                         </a>
                       </div>
                     </div>
-                    <OfferList offers={offers} type={offerListTypes.FAVORITES}/>
+                    <OfferList offers={offers} type={OfferListType.FAVORITES}/>
                   </li>
                 ))}
               </ul>

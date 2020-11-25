@@ -1,7 +1,7 @@
 import React from "react";
 import {offerPropType, reviewPropType} from "../../propTypes";
 import PropTypes from "prop-types";
-import {AuthorizationStatus, FavoritesResponseTypes, offerListTypes, OfferType} from '../../consts';
+import {AuthorizationStatus, FavoritesResponseType, OfferListType, OfferType} from '../../consts';
 import {getComments, getCurrentOffers, getOffer, getUserAuthStatus} from "../../store/selectors/selectors";
 import {connect} from "react-redux";
 import {fetchNearbyOffers, fetchOffer, fetchReviews, toggleFavorite} from "../../store/api-actions";
@@ -59,7 +59,7 @@ class Room extends React.PureComponent {
       description,
       price,
     } = offer;
-    const favoritesResponseType = FavoritesResponseTypes.OFFER;
+    const favoritesResponseType = FavoritesResponseType.OFFER;
     const isAuth = authStatus === AuthorizationStatus.AUTH;
     const type = OfferType[offer.type.toUpperCase()];
     const isPremium = offer.is_premium;
@@ -187,7 +187,7 @@ class Room extends React.PureComponent {
           <div className="container">
             <section className="near-places places">
               <h2 className="near-places__title">Other places in the neighbourhood</h2>
-              {nearbyOffers && (<OfferList offers={nearbyOffers} type={offerListTypes.ROOM}/>)}
+              {nearbyOffers && (<OfferList offers={nearbyOffers} type={OfferListType.ROOM}/>)}
             </section>
           </div>
         </main>

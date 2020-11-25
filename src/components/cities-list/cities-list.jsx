@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {FilterActions} from "../../store/action";
 import PropTypes from "prop-types";
-import {Cities} from '../../consts';
+import {City} from '../../consts';
 import {getCities, getCurrentCity} from "../../store/selectors/selectors";
 
 const CitiesList = (props) => {
@@ -53,11 +53,11 @@ CitiesList.propTypes = {
   currentCity: PropTypes.string.isRequired,
   setCity: PropTypes.func.isRequired,
   cities: PropTypes.arrayOf(PropTypes.oneOf([
-    Cities.PARIS,
-    Cities.COLOGNE,
-    Cities.BRUSSELS,
-    Cities.AMSTERDAM,
-    Cities.HAMBURG,
-    Cities.DUSSELDORF,
+    City.PARIS,
+    City.COLOGNE,
+    City.BRUSSELS,
+    City.AMSTERDAM,
+    City.HAMBURG,
+    City.DUSSELDORF,
   ])).isRequired,
 };

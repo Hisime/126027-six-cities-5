@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import OfferList from '../offer-list/offer-list';
 import Map from '../map/map';
-import {offerListTypes} from '../../consts';
+import {OfferListType} from '../../consts';
 import CitiesList from '../cities-list/cities-list';
 import {connect} from "react-redux";
 import Sort from "../sort/sort";
@@ -46,7 +46,7 @@ export const Main = (props) => {
               <h2 className="visually-hidden">Places</h2>
               <b className="places__found">{rentCount} places to stay in {currentCity}</b>
               <Sort/>
-              <OfferList offers={offers} type={offerListTypes.MAIN}/>
+              <OfferList offers={offers} type={OfferListType.MAIN}/>
             </section>
             <div className="cities__right-section">
               <section className="cities__map map">
