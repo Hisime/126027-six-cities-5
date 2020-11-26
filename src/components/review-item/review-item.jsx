@@ -1,7 +1,7 @@
 import React from "react";
 import {reviewPropType} from "../../propTypes";
 
-export const ReviewItem = (props) => {
+const ReviewItem = (props) => {
   const {
     review: {
       rating,
@@ -47,3 +47,6 @@ export const ReviewItem = (props) => {
 ReviewItem.propTypes = {
   review: reviewPropType.isRequired,
 };
+
+export {ReviewItem};
+

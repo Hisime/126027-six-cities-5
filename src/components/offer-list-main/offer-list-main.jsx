@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {offerPropType} from "../../propTypes";
 import {FavoritesResponseType} from "../../consts";
 
-export const OfferListMain = (props) => {
+const OfferListMain = (props) => {
   const {offers, onMouseEnterHandler, onMouseLeaveHandler} = props;
   const favoritesResponseType = FavoritesResponseType.MAIN;
   const classNames = {
@@ -32,3 +32,5 @@ OfferListMain.propTypes = {
   onMouseEnterHandler: PropTypes.func,
   onMouseLeaveHandler: PropTypes.func,
 };
+
+export {OfferListMain};

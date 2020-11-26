@@ -8,8 +8,8 @@ it(`Should ReviewForm render correctly`, () => {
   const tree = renderer
     .create(<ReviewForm
       id={`1`}
-      sendComment={noop}
-      ratingList={Ratings}/>)
+      ratingList={Ratings}
+      onSendComment={noop}/>)
     .toJSON();
 
   expect(tree).toMatchSnapshot();

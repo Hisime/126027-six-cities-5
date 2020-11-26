@@ -25,7 +25,6 @@ import {
   toggleFavorite,
 } from "../../api-actions";
 
-
 describe(`FilterActions works correctly`, () => {
   it(`action setCity sets correct id`, () => {
     expect(FilterActions.setCity(City.PARIS)).toEqual({
@@ -185,6 +184,11 @@ describe(`Async actions works correctly`, () => {
   it(`should toggle favorite offer`, () => {
     const apiMock = new MockAdapter(api);
     const dispatch = jest.fn();
+    const userData = {
+      USER: {
+        authorizationStatus: AuthorizationStatus.AUTH
+      },
+    };
     const fakeData = offersMock[0];
     const id = 1;
     const status = false;
@@ -196,8 +200,7 @@ describe(`Async actions works correctly`, () => {
       .onPost(`${APIRoute.FAVORITE}/${id}/${numberStatus}`)
       .reply(200, fakeData);
 
-    return toggler(dispatch, () => {
-    }, api)
+    return toggler(dispatch, () => userData, api)
       .then(() => {
         expect(dispatch).toHaveBeenCalledTimes(1);
         expect(dispatch).toHaveBeenNthCalledWith(1, {

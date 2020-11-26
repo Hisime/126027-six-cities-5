@@ -11,18 +11,18 @@ import OfferList from "../offer-list/offer-list";
 import {FilterActions} from "../../store/action";
 import {FavoritesEmpty} from "../favorites-empty/favorites-empty";
 
-export class Favorites extends React.PureComponent {
+class Favorites extends React.PureComponent {
   constructor(props) {
     super(props);
 
-    this.cityClickHandler = this.cityClickHandler.bind(this);
+    this.handleCityClick = this.handleCityClick.bind(this);
   }
 
   componentDidMount() {
     this.props.getFavoritesData();
   }
 
-  cityClickHandler(city) {
+  handleCityClick(city) {
     this.props.setCity(city);
     this.props.history.push(AppRoute.MAIN);
   }
@@ -65,7 +65,7 @@ export class Favorites extends React.PureComponent {
                     <div className="favorites__locations locations locations--current">
                       <div className="locations__item">
                         <a className="locations__item-link" onClick={() => {
-                          this.cityClickHandler(cityName);
+                          this.handleCityClick(cityName);
                         }}>
                           <span>{cityName}</span>
                         </a>
@@ -84,8 +84,19 @@ export class Favorites extends React.PureComponent {
       </div>
     );
   }
-
 }
+
+Favorites.propTypes = {
+  getFavoritesData: PropTypes.func.isRequired,
+  setCity: PropTypes.func.isRequired,
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }),
+  offersWithCities: PropTypes.shape({
+    offers: PropTypes.arrayOf(offerPropType),
+  }),
+};
+
 
 const mapStateToProps = (state) => ({
   offersWithCities: getFavoriteOffers(state),
@@ -100,15 +111,5 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-Favorites.propTypes = {
-  getFavoritesData: PropTypes.func.isRequired,
-  setCity: PropTypes.func.isRequired,
-  history: PropTypes.shape({
-    push: PropTypes.func,
-  }),
-  offersWithCities: PropTypes.shape({
-    offers: PropTypes.arrayOf(offerPropType),
-  }),
-};
-
+export {Favorites};
 export default connect(mapStateToProps, mapDispatchToProps)(Favorites);

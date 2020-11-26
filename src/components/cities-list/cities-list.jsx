@@ -10,7 +10,7 @@ const CitiesList = (props) => {
   const isActive = (city) => {
     return city === currentCity;
   };
-  const cityClickHandler = (city) => {
+  const handleCityClick = (city) => {
     setCity(city);
   };
   return (
@@ -23,7 +23,7 @@ const CitiesList = (props) => {
                 isActive(city) ? `tabs__item--active` : ``
               }`}
               onClick={() => {
-                cityClickHandler(city);
+                handleCityClick(city);
               }}
             >
               <span>{city}</span>
@@ -33,6 +33,19 @@ const CitiesList = (props) => {
       </ul>
     </section>
   );
+};
+
+CitiesList.propTypes = {
+  currentCity: PropTypes.string.isRequired,
+  setCity: PropTypes.func.isRequired,
+  cities: PropTypes.arrayOf(PropTypes.oneOf([
+    City.PARIS,
+    City.COLOGNE,
+    City.BRUSSELS,
+    City.AMSTERDAM,
+    City.HAMBURG,
+    City.DUSSELDORF,
+  ])).isRequired,
 };
 
 const mapStateToProps = (state) => ({
@@ -49,15 +62,3 @@ const mapDispatchToProps = (dispatch) => ({
 export {CitiesList};
 export default connect(mapStateToProps, mapDispatchToProps)(CitiesList);
 
-CitiesList.propTypes = {
-  currentCity: PropTypes.string.isRequired,
-  setCity: PropTypes.func.isRequired,
-  cities: PropTypes.arrayOf(PropTypes.oneOf([
-    City.PARIS,
-    City.COLOGNE,
-    City.BRUSSELS,
-    City.AMSTERDAM,
-    City.HAMBURG,
-    City.DUSSELDORF,
-  ])).isRequired,
-};

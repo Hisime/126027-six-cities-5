@@ -12,7 +12,7 @@ import UserNav from "../user-nav/user-nav";
 import {getCurrentCity, getFilteredOffers} from "../../store/selectors/selectors";
 import {Logo} from "../logo/logo";
 
-export const Main = (props) => {
+const Main = (props) => {
   const {offers, currentCity} = props;
   const rentCount = offers.length;
   if (rentCount === 0) {
@@ -60,15 +60,15 @@ export const Main = (props) => {
   );
 };
 
+Main.propTypes = {
+  offers: PropTypes.arrayOf(offerPropType).isRequired,
+  currentCity: PropTypes.string.isRequired,
+};
+
 const mapStateToProps = (state) => ({
   currentCity: getCurrentCity(state),
   offers: getFilteredOffers(state),
 });
 
+export {Main};
 export default connect(mapStateToProps)(Main);
-
-
-Main.propTypes = {
-  offers: PropTypes.arrayOf(offerPropType).isRequired,
-  currentCity: PropTypes.string.isRequired,
-};

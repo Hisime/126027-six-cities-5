@@ -92,5 +92,4 @@ const mapStateToProps = ({ACTIVE_OFFER}) => ({
 });
 
 export {Map};
-
 export default connect(mapStateToProps)(Map);

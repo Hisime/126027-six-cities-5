@@ -10,7 +10,7 @@ import AuthRoute from "../auth-route/auth-route";
 import Login from "../login/login";
 import Room from "../room/room";
 
-export const App = () => {
+const App = () => {
   return (
     <BrowserRouter history={browserHistory}>
       <Switch>
@@ -37,9 +37,7 @@ export const App = () => {
             );
           }}
         />
-        <Route path={AppRoute.MAIN}>
-          <Main/>
-        </Route>
+        <Route path={AppRoute.MAIN} component={Main}/>
         <Route path="/">
           <Redirect to={AppRoute.MAIN}/>
         </Route>
@@ -51,3 +49,5 @@ export const App = () => {
 App.propTypes = {
   match: PropTypes.object,
 };
+
+export {App};

@@ -2,10 +2,13 @@
 
 exports[`Should ReviewForm render correctly 1`] = `
 <form
-  action="#"
   className="reviews__form form"
-  method="post"
   onSubmit={[Function]}
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
 >
   <label
     className="reviews__label form__label"
@@ -20,6 +23,7 @@ exports[`Should ReviewForm render correctly 1`] = `
       className="form__rating-input visually-hidden"
       id="5-stars"
       name="rating"
+      onChange={[Function]}
       required={true}
       type="radio"
       value={5}
@@ -43,6 +47,7 @@ exports[`Should ReviewForm render correctly 1`] = `
       className="form__rating-input visually-hidden"
       id="4-stars"
       name="rating"
+      onChange={[Function]}
       required={true}
       type="radio"
       value={4}
@@ -66,6 +71,7 @@ exports[`Should ReviewForm render correctly 1`] = `
       className="form__rating-input visually-hidden"
       id="3-stars"
       name="rating"
+      onChange={[Function]}
       required={true}
       type="radio"
       value={3}
@@ -89,6 +95,7 @@ exports[`Should ReviewForm render correctly 1`] = `
       className="form__rating-input visually-hidden"
       id="2-stars"
       name="rating"
+      onChange={[Function]}
       required={true}
       type="radio"
       value={2}
@@ -112,6 +119,7 @@ exports[`Should ReviewForm render correctly 1`] = `
       className="form__rating-input visually-hidden"
       id="1-stars"
       name="rating"
+      onChange={[Function]}
       required={true}
       type="radio"
       value={1}
@@ -135,8 +143,10 @@ exports[`Should ReviewForm render correctly 1`] = `
   <textarea
     className="reviews__textarea form__textarea"
     id="review"
+    maxLength={300}
     minLength={50}
     name="comment"
+    onChange={[Function]}
     placeholder="Tell how was your stay, what you like and what can be improved"
     required={true}
   />
@@ -163,6 +173,7 @@ exports[`Should ReviewForm render correctly 1`] = `
     </p>
     <button
       className="reviews__submit form__submit button"
+      disabled={true}
       type="submit"
     >
       Submit

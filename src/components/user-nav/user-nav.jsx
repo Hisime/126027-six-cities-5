@@ -1,11 +1,11 @@
 import React from "react";
-import userNavProp from './user-nav.prop';
-import UserNavAuth from '../user-nav-auth/user-nav-auth';
-import UserNavUnauth from "../user-nav-unauth/user-nav-unauth";
+import {UserNavAuth} from '../user-nav-auth/user-nav-auth';
+import {UserNavUnauth} from "../user-nav-unauth/user-nav-unauth";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 import {AppRoute} from "../../consts";
 import {getUser} from "../../store/selectors/selectors";
+import {userPropType} from "../../propTypes";
 
 const UserNav = (props) => {
   const {user} = props;
@@ -24,13 +24,14 @@ const UserNav = (props) => {
   );
 };
 
-export {UserNav};
+UserNav.propTypes = {
+  user: userPropType,
+};
 
 const mapStateToProps = (state) => ({
   user: getUser(state),
 });
 
-UserNav.propTypes = userNavProp;
-
+export {UserNav};
 export default connect(mapStateToProps)(UserNav);
 

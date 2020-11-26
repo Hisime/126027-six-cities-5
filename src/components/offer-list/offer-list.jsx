@@ -37,6 +37,13 @@ const OfferList = (props) => {
   return getComponentByType(type);
 };
 
+OfferList.propTypes = {
+  offers: PropTypes.arrayOf(offerPropType).isRequired,
+  type: PropTypes.oneOf([
+    OfferListType.MAIN, OfferListType.ROOM, OfferListType.FAVORITES
+  ]).isRequired,
+  setActiveOfferId: PropTypes.func.isRequired,
+};
 
 const mapDispatchToProps = (dispatch) => ({
   setActiveOfferId(id) {
@@ -46,14 +53,6 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(ActiveCardActions.resetActiveOffer());
   },
 });
-
-OfferList.propTypes = {
-  offers: PropTypes.arrayOf(offerPropType).isRequired,
-  type: PropTypes.oneOf([
-    OfferListType.MAIN, OfferListType.ROOM, OfferListType.FAVORITES
-  ]).isRequired,
-  setActiveOfferId: PropTypes.func.isRequired,
-};
 
 export {OfferList};
 export default connect(null, mapDispatchToProps)(OfferList);

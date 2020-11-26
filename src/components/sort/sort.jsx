@@ -1,10 +1,12 @@
 import React from "react";
 import {connect} from "react-redux";
 import {FilterActions} from "../../store/action";
-import sortProp from "./sort.prop";
 import {getSortType} from "../../store/selectors/selectors";
+import PropTypes from "prop-types";
+import {SortType} from "../../consts";
+import {sortPropType} from "../../propTypes";
 
-export const Sort = (props) => {
+const Sort = (props) => {
   const {currentSort, isSortOpen, toggleSort, setSort, sortList} = props;
   const currentSortLabel = sortList.find((item) => item.value === currentSort).label;
   return (
@@ -36,6 +38,19 @@ export const Sort = (props) => {
   );
 };
 
+Sort.propTypes = {
+  currentSort: PropTypes.oneOf([
+    SortType.POPULAR,
+    SortType.PRICE_ASC,
+    SortType.PRICE_DES,
+    SortType.TOP_DES,
+  ]).isRequired,
+  sortList: PropTypes.arrayOf(sortPropType).isRequired,
+  isSortOpen: PropTypes.bool.isRequired,
+  toggleSort: PropTypes.func.isRequired,
+  setSort: PropTypes.func.isRequired,
+};
+
 const mapStateToProps = (state) => ({
   currentSort: getSortType(state),
   isSortOpen: state.DATA.isSortOpen,
@@ -51,8 +66,7 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-Sort.propTypes = sortProp;
-
+export {Sort};
 export default connect(mapStateToProps, mapDispatchToProps)(Sort);
 
 

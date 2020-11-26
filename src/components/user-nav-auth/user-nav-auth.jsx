@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import userNavProp from '../user-nav/user-nav.prop';
+import {userPropType} from "../../propTypes";
 
 
 const UserNavAuth = ({user}) => {
@@ -13,6 +13,8 @@ const UserNavAuth = ({user}) => {
   );
 };
 
-UserNavAuth.propTypes = userNavProp;
+UserNavAuth.propTypes = {
+  user: userPropType,
+};
 
-export default UserNavAuth;
+export {UserNavAuth};

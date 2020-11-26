@@ -5,8 +5,9 @@ import CitiesList from "../cities-list/cities-list";
 import {getCurrentCity} from "../../store/selectors/selectors";
 import {Link} from "react-router-dom";
 import {AppRoute} from "../../consts";
+import UserNav from "../user-nav/user-nav";
 
-export const MainEmpty = (props) => {
+const MainEmpty = (props) => {
   const {currentCity} = props;
   return (
     <div className="page page--gray page--main">
@@ -20,13 +21,7 @@ export const MainEmpty = (props) => {
             </div>
             <nav className="header__nav">
               <ul className="header__nav-list">
-                <li className="header__nav-item user">
-                  <a className="header__nav-link header__nav-link--profile" href="#">
-                    <div className="header__avatar-wrapper user__avatar-wrapper">
-                    </div>
-                    <span className="header__user-name user__name">Oliver.conner@gmail.com</span>
-                  </a>
-                </li>
+                <UserNav/>
               </ul>
             </nav>
           </div>
@@ -57,13 +52,13 @@ export const MainEmpty = (props) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  currentCity: getCurrentCity(state),
-});
-
-
 MainEmpty.propTypes = {
   currentCity: PropTypes.string.isRequired,
 };
 
+const mapStateToProps = (state) => ({
+  currentCity: getCurrentCity(state),
+});
+
+export {MainEmpty};
 export default connect(mapStateToProps)(MainEmpty);

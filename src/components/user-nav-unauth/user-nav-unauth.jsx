@@ -9,4 +9,4 @@ const UserNavUnauth = () => {
   );
 };
 
-export default UserNavUnauth;
+export {UserNavUnauth};

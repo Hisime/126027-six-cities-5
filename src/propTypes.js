@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import {SortType} from "./consts";
 
 /* eslint-disable */
 
@@ -7,6 +8,16 @@ export const userPropType = PropTypes.shape({
   name: PropTypes.string.isRequired,
   is_pro: PropTypes.bool.isRequired,
   id: PropTypes.number.isRequired,
+});
+
+export const sortPropType = PropTypes.shape({
+  label: PropTypes.string.isRequired,
+  value: PropTypes.oneOf([
+    SortType.POPULAR,
+    SortType.PRICE_ASC,
+    SortType.PRICE_DES,
+    SortType.TOP_DES,
+  ]).isRequired,
 });
 
 export const reviewPropType = PropTypes.shape({

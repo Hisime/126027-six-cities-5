@@ -8,7 +8,9 @@ import {
   setOffer,
   UserActions,
 } from "./action";
-import {APIRoute, AuthorizationStatus} from "../consts";
+import {APIRoute, AppRoute, AuthorizationStatus} from "../consts";
+import browserHistory from "../browser-history/browser-history";
+import {getUserAuthStatus} from "./selectors/selectors";
 
 export const fetchOffers = () => (dispatch, _getState, api) => (
   api.get(APIRoute.HOTELS)
@@ -26,9 +28,15 @@ export const fetchFavorites = () => (dispatch, _getState, api) => (
 );
 
 export const toggleFavorite = (id, status, type) => (dispatch, _getState, api) => {
-  const numberStatus = +!status;
-  return api.post(`${APIRoute.FAVORITE}/${id}/${numberStatus}`)
-    .then(({data}) => dispatch(setOffer(data, type)));
+  const isAuth = getUserAuthStatus(_getState()) === AuthorizationStatus.AUTH;
+  if (isAuth) {
+    const numberStatus = +!status;
+    return api.post(`${APIRoute.FAVORITE}/${id}/${numberStatus}`)
+      .then(({data}) => dispatch(setOffer(data, type)));
+  } else {
+    browserHistory.push(AppRoute.LOGIN);
+    return false;
+  }
 };
 
 export const fetchNearbyOffers = (id) => (dispatch, _getState, api) => (
